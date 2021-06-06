@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>adobe.pdfservices.operation.auth package &mdash; pdfservices-sdk  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pdfservices-sdk
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#clientconfig">ClientConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#clientconfigbuilder">ClientConfigBuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#credentials">Credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#executioncontext">ExecutionContext</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#extractpdfoperation">ExtractPDFOperation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#extractpdfoptions">ExtractPDFOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#fileref">FileRef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#module-adobe.pdfservices.operation.exception.exceptions">Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#serviceaccountcredentials">ServiceAccountCredentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#serviceaccountcredentialsbuilder">ServiceAccountCredentialsBuilder</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pdfservices-sdk</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>adobe.pdfservices.operation.auth package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="adobe-pdfservices-operation-auth-package">
+<h1>adobe.pdfservices.operation.auth package<a class="headerlink" href="#adobe-pdfservices-operation-auth-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-adobe.pdfservices.operation.auth.credentials">
+<span id="adobe-pdfservices-operation-auth-credentials-module"></span><h2>adobe.pdfservices.operation.auth.credentials module<a class="headerlink" href="#module-adobe.pdfservices.operation.auth.credentials" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.credentials.Credentials">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.auth.credentials.</span></span><span class="sig-name descname"><span class="pre">Credentials</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.credentials.Credentials" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>Marker base class for different types of credentials. Currently it supports only <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a>.
+The factory methods within this class can be used to create instances of credentials classes.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.credentials.Credentials.service_account_credentials_builder">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">service_account_credentials_builder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.credentials.Credentials.service_account_credentials_builder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a> builder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>An instance of ServiceAccountCredentials Builder.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="reference/index.html#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-adobe.pdfservices.operation.auth.service_account_credentials">
+<span id="adobe-pdfservices-operation-auth-service-account-credentials-module"></span><h2>adobe.pdfservices.operation.auth.service_account_credentials module<a class="headerlink" href="#module-adobe.pdfservices.operation.auth.service_account_credentials" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.auth.service_account_credentials.</span></span><span class="sig-name descname"><span class="pre">ServiceAccountCredentials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_secret</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">private_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">organization_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ims_base_uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">adobe.pdfservices.operation.internal.service_constants.ServiceConstants.JWT_BASE_URI</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">claim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.credentials.Credentials" title="adobe.pdfservices.operation.auth.credentials.Credentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">adobe.pdfservices.operation.auth.credentials.Credentials</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>Service Account credentials allow your application to call PDF Tools Extract API on behalf of the application itself,
+or on behalf of an enterprise organization. For getting the credentials,
+<a class="reference external" href="https://www.adobe.com/go/pdfextractapi_requestform">Click Here</a>.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Builder</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Builds a <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a> instance.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.build">
+<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a new <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a> instance built from the current state of this builder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A ServiceAccountCredentials instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials">ServiceAccountCredentials</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.from_file">
+<span class="sig-name descname"><span class="pre">from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials_file_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets Service Account Credentials using the JSON credentials file path. All the keys in the JSON structure are optional.</p>
+<p>JSON structure:</p>
+<div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;client_credentials&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;client_id&quot;</span><span class="p">:</span> <span class="s2">&quot;CLIENT_ID&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;client_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;CLIENT_SECRET&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;service_account_credentials&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;organization_id&quot;</span><span class="p">:</span> <span class="s2">&quot;org_ident@AdobeOrg&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;account_id&quot;</span><span class="p">:</span> <span class="s2">&quot;id@techacct.adobe.com&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;private_key_file&quot;</span><span class="p">:</span> <span class="s2">&quot;private.key&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>private_key_file is the path of private key file. It will be looked up in the classpath and the directory of JSON credentials file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>credentials_file_path</strong> (<em>str</em>) – JSON credentials file path</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_account_id">
+<span class="sig-name descname"><span class="pre">with_account_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_account_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set Account Id (format: <a class="reference external" href="mailto:id&#37;&#52;&#48;techacct&#46;adobe&#46;com">id<span>&#64;</span>techacct<span>&#46;</span>adobe<span>&#46;</span>com</a>)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account_id</strong> (<em>str</em>) – Account ID (format: <a class="reference external" href="mailto:id&#37;&#52;&#48;techacct&#46;adobe&#46;com">id<span>&#64;</span>techacct<span>&#46;</span>adobe<span>&#46;</span>com</a>)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_id">
+<span class="sig-name descname"><span class="pre">with_client_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set Client ID (API Key)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>client_id</strong> (<em>str</em>) – Client Id (API Key)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_secret">
+<span class="sig-name descname"><span class="pre">with_client_secret</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_secret" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set Client Secret</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>client_secret</strong> (<em>str</em>) – Client Secret</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_organization_id">
+<span class="sig-name descname"><span class="pre">with_organization_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">organization_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_organization_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set Organization Id (format: <a class="reference external" href="mailto:org_ident&#37;&#52;&#48;AdobeOrg">org_ident<span>&#64;</span>AdobeOrg</a>) that has been configured for access to PDF Tools API</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>organization_id</strong> (<em>str</em>) – Organization ID (format: <a class="reference external" href="mailto:org_ident&#37;&#52;&#48;AdobeOrg">org_ident<span>&#64;</span>AdobeOrg</a>)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_private_key">
+<span class="sig-name descname"><span class="pre">with_private_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_private_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set private key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>private_key</strong> (<em>str</em>) – Content of the Private Key (PEM format)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.account_id">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">account_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.account_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account ID(format: <a class="reference external" href="mailto:id&#37;&#52;&#48;techacct&#46;adobe&#46;com">id<span>&#64;</span>techacct<span>&#46;</span>adobe<span>&#46;</span>com</a>)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.claim">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">claim</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.claim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identifies the Service for which Authorization(Access) Token will be issued</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_id">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">client_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Client Id (API Key)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_secret">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">client_secret</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_secret" title="Permalink to this definition">¶</a></dt>
+<dd><p>Client Secret</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.organization_id">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">organization_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.organization_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identifies the organization(format: <a class="reference external" href="mailto:org_ident&#37;&#52;&#48;AdobeOrg">org_ident<span>&#64;</span>AdobeOrg</a>) that has been configured for access to PDF Tools API.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.private_key">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">private_key</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.private_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Content of the Private Key (PEM format)</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-adobe.pdfservices.operation.auth">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-adobe.pdfservices.operation.auth" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Adobe.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
