@@ -82,7 +82,7 @@ python src/extractpdf/extract_txt_table_info_with_rendition_from_pdf.py
 ```
 ##### Extract Text, Table Elements with Renditions of Figure, Table Elements
 
-The sample class extract_txt_table_info_with_figure_tables_rendition_from_pdf.py extracts text, table elements along with figure 
+The sample class ```extract_txt_table_info_with_figure_tables_rendition_from_pdf.py``` extracts text, table elements along with figure 
 and table element's renditions from PDF Document. Note that the output is a zip containing the structured information 
 along with renditions as described in [section](#structured-information-output-format).
 
@@ -92,7 +92,7 @@ python src/extractpdf/extract_txt_table_info_with_figure_tables_rendition_from_p
 
 ##### Extract Text Elements (By providing in-memory Authentication credentials)
 
-The sample class extract_txt_from_pdf_with_in_memory_auth_credentials.py extracts text elements from PDF Document. 
+The sample class ```extract_txt_from_pdf_with_in_memory_auth_credentials.py``` extracts text elements from PDF Document. 
 This sample highlights how to provide in-memory auth credentials for performing an operation. 
 This enables the clients to fetch the credentials from a secret server during runtime, instead of storing them in a file.
 
@@ -102,7 +102,7 @@ python src/extractpdf/extract_txt_from_pdf_with_in_memory_auth_credentials.py
 
 ##### Extract Text Elements and bounding boxes for Characters present in text blocks
 
-The sample class extract_txt_with_char_bounds_from_pdf.py extracts text elements and bounding boxes for characters present in text blocks. 
+The sample class ```extract_txt_with_char_bounds_from_pdf.py``` extracts text elements and bounding boxes for characters present in text blocks. 
 Note that the output is a zip containing the structured information 
 along with renditions as described in [section](#structured-information-output-format).
 
@@ -112,7 +112,7 @@ python src/extractpdf/extract_txt_with_char_bounds_from_pdf.py
 
 ##### Extract Text, Table Elements and bounding boxes for Characters present in text blocks with Renditions of Table Elements
 
-The sample class extract_txt_table_info_with_char_bounds_from_pdf.py extracts text, table elements, bounding boxes for characters present in text blocks and table element's renditions from PDF Document. 
+The sample class ```extract_txt_table_info_with_char_bounds_from_pdf.py``` extracts text, table elements, bounding boxes for characters present in text blocks and table element's renditions from PDF Document. 
 Note that the output is a zip containing the structured information 
 along with renditions as described in [section](#structured-information-output-format).
 
@@ -122,7 +122,7 @@ python src/extractpdf/extract_txt_table_info_with_char_bounds_from_pdf.py
 
 ##### Extract Text, Table Elements with Renditions and CSV's of Table Elements
 
-The sample class extract_txt_table_info_with_table_structure_from_pdf.py extracts text, table elements, table structures as CSV and table element's renditions from PDF Document.  
+The sample class ```extract_txt_table_info_with_table_structure_from_pdf.py``` extracts text, table elements, table structures as CSV and table element's renditions from PDF Document.  
 Note that the output is a zip containing the structured information 
 along with renditions as described in [section](#structured-information-output-format).
 
@@ -132,7 +132,7 @@ python src/extractpdf/extract_txt_table_info_with_table_structure_from_pdf.py
 
 ##### Extract Text with Styling Info
 
-The sample class extract_txt_with_styling_info_from_pdf.py extracts text along with Styling Info.  
+The sample class ```extract_txt_with_styling_info_from_pdf.py``` extracts text along with Styling Info.  
 Note that the output is a zip containing the structured information 
 along with renditions as described in [section](#structured-information-output-format).
 
