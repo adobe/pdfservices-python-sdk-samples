@@ -19,7 +19,6 @@ from adobe.pdfservices.operation.execution_context import ExecutionContext
 from adobe.pdfservices.operation.io.file_ref import FileRef
 from adobe.pdfservices.operation.pdfops.extract_pdf_operation import ExtractPDFOperation
 
-
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
 try:
@@ -27,15 +26,15 @@ try:
     base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
     # Initial setup, create credentials instance.
-    credentials = Credentials.service_account_credentials_builder()\
+    credentials = Credentials.service_account_credentials_builder() \
         .from_file(base_path + "/pdfservices-api-credentials.json") \
         .build()
 
-    #Create an ExecutionContext using credentials and create a new operation instance.
+    # Create an ExecutionContext using credentials and create a new operation instance.
     execution_context = ExecutionContext.create(credentials)
     extract_pdf_operation = ExtractPDFOperation.create_new()
 
-    #Set operation input from a source file.
+    # Set operation input from a source file.
     source = FileRef.create_from_local_file(base_path + "/resources/extractPdfInput.pdf")
     extract_pdf_operation.set_input(source)
 
@@ -46,7 +45,7 @@ try:
         .build()
     extract_pdf_operation.set_options(extract_pdf_options)
 
-    #Execute the operation.
+    # Execute the operation.
     result: FileRef = extract_pdf_operation.execute(execution_context)
 
     # Save the result to the specified location.

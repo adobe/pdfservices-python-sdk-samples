@@ -44,7 +44,8 @@ try:
     # Build ExtractPDF options and set them into the operation
     extract_pdf_options: ExtractPDFOptions = ExtractPDFOptions.builder() \
         .with_elements_to_extract([ExtractElementType.TEXT, ExtractElementType.TABLES]) \
-        .with_elements_to_extract_renditions([ExtractRenditionsElementType.TABLES, ExtractRenditionsElementType.FIGURES]) \
+        .with_elements_to_extract_renditions([ExtractRenditionsElementType.TABLES,
+                                              ExtractRenditionsElementType.FIGURES]) \
         .build()
     extract_pdf_operation.set_options(extract_pdf_options)
 
