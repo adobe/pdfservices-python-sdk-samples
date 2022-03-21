@@ -140,10 +140,86 @@ along with renditions as described in [section](#structured-information-output-f
 python src/extractpdf/extract_txt_with_styling_info_from_pdf.py
 ```
 
+###Autotag PDF
+
+These samples illustrate autotagging a pdf and generating the tagged pdf of version 1.7 or 2.0 and an optional report which contains the information about the tags the tagged document contains.This feature is in Beta.
+
+##### Generates tagged PDF of version 1.7 from a PDF
+
+The sample class ```autotag_pdf_v1.7.py``` generates tagged PDF of version 1.7 from a PDF.
+Note that the output is a folder containing the PDF file.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_v1.7.py
+```
+
+##### Generates tagged PDF of version 1.7 and a report from a PDF
+
+The sample class ```autotag_pdf_v1.7_with_report.py``` generates tagged PDF of version 1.7 and a report from a PDF.
+Note that the output is a folder containing the PDF file and an XLSX report.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_v1.7_with_report.py
+```
+
+##### Generates tagged PDF of version 1.7 by shifting headings and a report from a PDF
+
+The sample class ```autotag_pdf_v1.7_with_report_and_shiftheadings.py``` generates tagged PDF of version 1.7 by shifting headings and a report from a PDF.
+Note that the output is a folder containing the PDF file and an XLSX report.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_v1.7_with_report_and_shiftheadings.py
+```
+
+##### Generates tagged PDF of version 1.7 by shifting headings from a PDF
+
+The sample class ```autotag_pdf_v1.7_with_shiftheadings.py``` generates tagged PDF of version 1.7 by shifting headings from a PDF.
+Note that the output is a folder containing the PDF file.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_v1.7_with_shiftheadings.py
+```
+
+##### Generates tagged PDF of version 2.0 from a PDF
+
+The sample class ```autotag_pdf_v2.0.py``` generates tagged PDF of version 2.0 from a PDF.
+Note that the output is a folder containing the PDF file.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_v2.0.py
+```
+
+##### Generates tagged PDF of version 2.0 and a report from a PDF
+
+The sample class ```autotag_pdf_v2.0_with_report.py``` generates tagged PDF of version 2.0 and a report from a PDF.
+Note that the output is a folder containing the PDF file and an XLSX report.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_v2.0_with_report.py
+```
+
+##### Generates tagged PDF of version 2.0 by shifting headings and a report from a PDF
+
+The sample class ```autotag_pdf_v2.0_with_report_and_shiftheadings.py``` generates tagged PDF of version 2.0 by shifting headings and a report from a PDF.
+Note that the output is a folder containing the PDF file and an XLSX report.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_v2.0_with_report_and_shiftheadings.py
+```
+
+##### Generates tagged PDF of version 2.0 by shifting headings from a PDF
+
+The sample class ```autotag_pdf_v2.0_with_shiftheadings.py``` generates tagged PDF of version 2.0 by shifting headings from a PDF.
+Note that the output is a folder containing the PDF file.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_v2.0_with_shiftheadings.py
+```
+
 ### Contributing
 
 Contributions are welcome! Read the [Contributing Guide](.github/CONTRIBUTING.md) for more information.
 
 ### Licensing
 
-This project is licensed under the Apache2 License. See [LICENSE](LICENSE.md) for more information.
+This project is licensed under the Apache2 License. See [LICENSE](LICENSE.md) for more information. 
