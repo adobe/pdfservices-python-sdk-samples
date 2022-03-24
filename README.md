@@ -140,7 +140,7 @@ along with renditions as described in [section](#structured-information-output-f
 python src/extractpdf/extract_txt_with_styling_info_from_pdf.py
 ```
 
-###Autotag PDF
+### Autotag PDF
 
 These samples illustrate autotagging a pdf and generating the tagged pdf of version 1.7 or 2.0 and an optional report which contains the information about the tags the tagged document contains.This feature is in Beta.
 
