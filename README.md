@@ -172,7 +172,7 @@ Here is a sample list of command line arguments and their description: </br>
 --shift_headings { If this argument is present then the headings will be shifted in the output PDF file } </br>
 
 ```$xslt
-python src/autotagpdf/autotag_pdf_parameterised.py --report --shift_headings --input resources/autotagPdfInput.pdf --output output/
+python src/autotagpdf/autotag_pdf_parameterised.py --report --shift_headings --input resources/autotagPdfInput.pdf --output output/AutotagPDFParamaterised/
 ```
 
 ### Contributing
