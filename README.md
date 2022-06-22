@@ -142,78 +142,37 @@ python src/extractpdf/extract_txt_with_styling_info_from_pdf.py
 
 ### Autotag PDF
 
-These samples illustrate autotagging a pdf and generating the tagged pdf of version 1.7 or 2.0 and an optional report which contains the information about the tags the tagged document contains.This feature is in Beta.
+These samples illustrate auto-tagging a PDF and generating the tagged PDF and an optional report
+which contains the information about the tags the tagged document contains.
 
-##### Generates tagged PDF of version 1.7 from a PDF
+#### Generates tagged PDF from a PDF
 
-The sample class ```autotag_pdf_v1.7.py``` generates tagged PDF of version 1.7 from a PDF.
-Note that the output is a folder containing the PDF file.
+The sample class ```autotag_pdf.py``` generates tagged PDF from a PDF.
 
 ```$xslt
-python src/autotagpdf/autotag_pdf_v1.7.py
+python src/autotagpdf/autotag_pdf.py
 ```
 
-##### Generates tagged PDF of version 1.7 and a report from a PDF
+#### Generates tagged PDF along with a report and shift the headings in the output PDF file
 
-The sample class ```autotag_pdf_v1.7_with_report.py``` generates tagged PDF of version 1.7 and a report from a PDF.
-Note that the output is a folder containing the PDF file and an XLSX report.
+The sample class ```autotag_pdf_with_options.py``` generates tagged PDF with a report and shift the headings in the output PDF file.
 
 ```$xslt
-python src/autotagpdf/autotag_pdf_v1.7_with_report.py
+python src/autotagpdf/autotag_pdf_with_options.py
 ```
 
-##### Generates tagged PDF of version 1.7 by shifting headings and a report from a PDF
+#### Generates tagged PDF by setting options with command line arguments
 
-The sample class ```autotag_pdf_v1.7_with_report_and_shiftheadings.py``` generates tagged PDF of version 1.7 by shifting headings and a report from a PDF.
-Note that the output is a folder containing the PDF file and an XLSX report.
+The sample class ```autotag_pdf_parameterised.py``` generates tagged PDF by setting options through command line arguments
 
-```$xslt
-python src/autotagpdf/autotag_pdf_v1.7_with_report_and_shiftheadings.py
-```
-
-##### Generates tagged PDF of version 1.7 by shifting headings from a PDF
-
-The sample class ```autotag_pdf_v1.7_with_shiftheadings.py``` generates tagged PDF of version 1.7 by shifting headings from a PDF.
-Note that the output is a folder containing the PDF file.
+Here is a sample list of command line arguments and their description: </br>
+--input &lt; input file path &gt; </br>
+--output &lt; output file path &gt; </br>
+--report { If this argument is present then the output will be generated with the report } </br>
+--shift_headings { If this argument is present then the headings will be shifted in the output PDF file } </br>
 
 ```$xslt
-python src/autotagpdf/autotag_pdf_v1.7_with_shiftheadings.py
-```
-
-##### Generates tagged PDF of version 2.0 from a PDF
-
-The sample class ```autotag_pdf_v2.0.py``` generates tagged PDF of version 2.0 from a PDF.
-Note that the output is a folder containing the PDF file.
-
-```$xslt
-python src/autotagpdf/autotag_pdf_v2.0.py
-```
-
-##### Generates tagged PDF of version 2.0 and a report from a PDF
-
-The sample class ```autotag_pdf_v2.0_with_report.py``` generates tagged PDF of version 2.0 and a report from a PDF.
-Note that the output is a folder containing the PDF file and an XLSX report.
-
-```$xslt
-python src/autotagpdf/autotag_pdf_v2.0_with_report.py
-```
-
-##### Generates tagged PDF of version 2.0 by shifting headings and a report from a PDF
-
-The sample class ```autotag_pdf_v2.0_with_report_and_shiftheadings.py``` generates tagged PDF of version 2.0 by shifting headings and a report from a PDF.
-Note that the output is a folder containing the PDF file and an XLSX report.
-
-```$xslt
-python src/autotagpdf/autotag_pdf_v2.0_with_report_and_shiftheadings.py
-```
-
-##### Generates tagged PDF of version 2.0 by shifting headings from a PDF
-
-The sample class ```autotag_pdf_v2.0_with_shiftheadings.py``` generates tagged PDF of version 2.0 by shifting headings from a PDF.
-Note that the output is a folder containing the PDF file.
-
-```$xslt
-python src/autotagpdf/autotag_pdf_v2.0_with_shiftheadings.py
+python src/autotagpdf/autotag_pdf_parameterised.py --report --shift_headings --input resources/autotagPdfInput.pdf --output output/AutotagPDFParamaterised/
 ```
 
 ### Contributing
