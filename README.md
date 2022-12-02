@@ -90,6 +90,15 @@ along with renditions as described in [section](#structured-information-output-f
 python src/extractpdf/extract_txt_table_info_with_figure_tables_rendition_from_pdf.py
 ```
 
+##### Extract Text Elements (By providing custom timeouts)
+
+The sample class ```extract_txt_from_pdf_with_custom_timeouts.py``` extracts text elements from PDF Document. 
+This sample highlights how to provide the custom value for connection timeout and socket timeout. 
+
+```$xslt
+python src/extractpdf/extract_txt_from_pdf_with_custom_timeouts.py
+```
+
 ##### Extract Text Elements (By providing in-memory Authentication credentials)
 
 The sample class ```extract_txt_from_pdf_with_in_memory_auth_credentials.py``` extracts text elements from PDF Document. 
