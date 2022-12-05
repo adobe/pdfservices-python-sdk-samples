@@ -32,7 +32,8 @@ try:
         .build()
 
     # Create client config instance with custom time-outs.
-    client_config = ClientConfig.builder().with_connect_timeout(10000).with_read_timeout(40000).build()
+    client_config = ClientConfig.builder().with_connect_timeout(10000).with_read_timeout(40000) \
+           .build()
 
     # Create an ExecutionContext using credentials and create a new operation instance.
     execution_context = ExecutionContext.create(credentials, client_config)
