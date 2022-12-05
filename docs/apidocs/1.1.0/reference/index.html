@@ -3,15 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview &mdash; pdfservices-sdk  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Overview &mdash; pdfservices-sdk  documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -65,7 +63,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id14">Exceptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Exceptions</a></li>
 </ul>
 </li>
 </ul>
@@ -96,16 +94,16 @@
            <div itemprop="articleBody">
              
   <div class="section" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h1>
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="extract-pdf">
-<h2>Extract PDF<a class="headerlink" href="#extract-pdf" title="Permalink to this headline"></a></h2>
+<h2>Extract PDF<a class="headerlink" href="#extract-pdf" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="extractpdfoperation">
-<h3>ExtractPDFOperation<a class="headerlink" href="#extractpdfoperation" title="Permalink to this headline"></a></h3>
+<h3>ExtractPDFOperation<a class="headerlink" href="#extractpdfoperation" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.pdfops.extract_pdf_operation.</span></span><span class="sig-name descname"><span class="pre">ExtractPDFOperation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">create_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.pdfops.extract_pdf_operation.</code><code class="sig-name descname">ExtractPDFOperation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">create_key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="../adobe.pdfservices.operation.html#adobe.pdfservices.operation.operation.Operation" title="adobe.pdfservices.operation.operation.Operation"><code class="xref py py-class docutils literal notranslate"><span class="pre">adobe.pdfservices.operation.operation.Operation</span></code></a></p>
 <p>An Operation that extracts pdf elements such as text and tables in a structured format from a PDF, along
 with renditions for tables and figures.</p>
@@ -139,14 +137,14 @@ with renditions for tables and figures.</p>
 </pre></div>
 </div>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES">
-<span class="sig-name descname"><span class="pre">SUPPORTED_SOURCE_MEDIA_TYPES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{adobe.pdfservices.operation.internal.extension_media_type_mapping.ExtensionMediaTypeMapping.PDF.mime_type}</span></em><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES">
+<code class="sig-name descname">SUPPORTED_SOURCE_MEDIA_TYPES</code><em class="property"> = {adobe.pdfservices.operation.internal.extension_media_type_mapping.ExtensionMediaTypeMapping.PDF.mime_type}</em><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES" title="Permalink to this definition">¶</a></dt>
 <dd><p>Supported source file formats for <code class="xref py py-class docutils literal notranslate"><span class="pre">ExtractPdfOperation</span></code> is .pdf.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.create_new">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_new</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.create_new" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.create_new">
+<em class="property">classmethod </em><code class="sig-name descname">create_new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.create_new" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates a new instance of <cite>ExtractPDFOperation</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -159,8 +157,8 @@ with renditions for tables and figures.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.execute">
-<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">execution_context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.execution_context.ExecutionContext" title="adobe.pdfservices.operation.execution_context.ExecutionContext"><span class="pre">adobe.pdfservices.operation.execution_context.ExecutionContext</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.execute" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">execution_context</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.execution_context.ExecutionContext" title="adobe.pdfservices.operation.execution_context.ExecutionContext">adobe.pdfservices.operation.execution_context.ExecutionContext</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.execute" title="Permalink to this definition">¶</a></dt>
 <dd><p>Executes this operation synchronously using the supplied context and returns a new FileRef instance for the resulting Zip file.
 The resulting file may be stored in the system temporary directory. See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref.FileRef" title="adobe.pdfservices.operation.io.file_ref.FileRef"><code class="xref py py-class docutils literal notranslate"><span class="pre">adobe.pdfservices.operation.io.file_ref.FileRef</span></code></a> for how temporary resources are cleaned up.</p>
 <dl class="field-list simple">
@@ -180,22 +178,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.get_options">
-<span class="sig-name descname"><span class="pre">get_options</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.get_options" title="Permalink to this definition"></a></dt>
-<dd><p>gets the ExtractPDFOptions.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>The options parameter of the operation</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions">ExtractPDFOptions</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_input">
-<span class="sig-name descname"><span class="pre">set_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_file_ref</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref.FileRef" title="adobe.pdfservices.operation.io.file_ref.FileRef"><span class="pre">adobe.pdfservices.operation.io.file_ref.FileRef</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_input" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_input">
+<code class="sig-name descname">set_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source_file_ref</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref.FileRef" title="adobe.pdfservices.operation.io.file_ref.FileRef">adobe.pdfservices.operation.io.file_ref.FileRef</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets an input file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -211,8 +195,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_options">
-<span class="sig-name descname"><span class="pre">set_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">extract_pdf_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions"><span class="pre">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_options" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_options">
+<code class="sig-name descname">set_options</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">extract_pdf_options</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_options" title="Permalink to this definition">¶</a></dt>
 <dd><p>sets the ExtractPDFOptions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -231,10 +215,10 @@ The resulting file may be stored in the system temporary directory. See <a class
 
 </div>
 <div class="section" id="extractpdfoptions">
-<h3>ExtractPDFOptions<a class="headerlink" href="#extractpdfoptions" title="Permalink to this headline"></a></h3>
+<h3>ExtractPDFOptions<a class="headerlink" href="#extractpdfoptions" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.</span></span><span class="sig-name descname"><span class="pre">ExtractPDFOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elements_to_extract</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements_to_extract_renditions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_char_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_output_format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_styling_info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.</code><code class="sig-name descname">ExtractPDFOptions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">elements_to_extract</span></em>, <em class="sig-param"><span class="n">elements_to_extract_renditions</span></em>, <em class="sig-param"><span class="n">get_char_info</span></em>, <em class="sig-param"><span class="n">table_output_format</span></em>, <em class="sig-param"><span class="n">include_styling_info</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>An Options Class that defines the options for ExtractPDFOperation.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extract_pdf_options</span><span class="p">:</span> <span class="n">ExtractPDFOptions</span> <span class="o">=</span> <span class="n">ExtractPDFOptions</span><span class="o">.</span><span class="n">builder</span><span class="p">()</span> \
@@ -247,18 +231,18 @@ The resulting file may be stored in the system temporary directory. See <a class
 </pre></div>
 </div>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Builder</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder">
+<em class="property">class </em><code class="sig-name descname">Builder</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>The builder for <a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ExtractPDFOptions</span></code></a>.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.build">
-<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.build" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.build" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract">
-<span class="sig-name descname"><span class="pre">with_element_to_extract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_to_extract</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType"><span class="pre">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract">
+<code class="sig-name descname">with_element_to_extract</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element_to_extract</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds a pdf element type for extracting structured information.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -277,8 +261,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract_renditions">
-<span class="sig-name descname"><span class="pre">with_element_to_extract_renditions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_to_extract_renditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType"><span class="pre">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract_renditions" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract_renditions">
+<code class="sig-name descname">with_element_to_extract_renditions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element_to_extract_renditions</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract_renditions" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds a pdf element type for extracting rendition.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -297,8 +281,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract">
-<span class="sig-name descname"><span class="pre">with_elements_to_extract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elements_to_extract</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType"><span class="pre">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract">
+<code class="sig-name descname">with_elements_to_extract</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">elements_to_extract</span><span class="p">:</span> <span class="n">List<span class="p">[</span><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_element_type.ExtractElementType</a><span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds a list of pdf element types for extracting structured information.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -317,8 +301,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract_renditions">
-<span class="sig-name descname"><span class="pre">with_elements_to_extract_renditions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elements_to_extract_renditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType"><span class="pre">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract_renditions" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract_renditions">
+<code class="sig-name descname">with_elements_to_extract_renditions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">elements_to_extract_renditions</span><span class="p">:</span> <span class="n">List<span class="p">[</span><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType">adobe.pdfservices.operation.pdfops.options.extractpdf.extract_renditions_element_type.ExtractRenditionsElementType</a><span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract_renditions" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds a list of pdf element types for extracting rendition.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -337,8 +321,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_get_char_info">
-<span class="sig-name descname"><span class="pre">with_get_char_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">get_char_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_get_char_info" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_get_char_info">
+<code class="sig-name descname">with_get_char_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">get_char_info</span><span class="p">:</span> <span class="n">bool</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_get_char_info" title="Permalink to this definition">¶</a></dt>
 <dd><p>sets the Boolean specifying whether to add character level bounding boxes to output json</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -354,8 +338,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_include_styling_info">
-<span class="sig-name descname"><span class="pre">with_include_styling_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">include_styling_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_include_styling_info" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_include_styling_info">
+<code class="sig-name descname">with_include_styling_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">include_styling_info</span><span class="p">:</span> <span class="n">bool</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_include_styling_info" title="Permalink to this definition">¶</a></dt>
 <dd><p>sets the Boolean specifying whether to add PDF Elements Styling Info to output json</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -371,8 +355,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_table_structure_format">
-<span class="sig-name descname"><span class="pre">with_table_structure_format</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_structure</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.table_structure_type.TableStructureType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.table_structure_type.TableStructureType"><span class="pre">adobe.pdfservices.operation.pdfops.options.extractpdf.table_structure_type.TableStructureType</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_table_structure_format" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_table_structure_format">
+<code class="sig-name descname">with_table_structure_format</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">table_structure</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../adobe.pdfservices.operation.pdfops.options.extractpdf.html#adobe.pdfservices.operation.pdfops.options.extractpdf.table_structure_type.TableStructureType" title="adobe.pdfservices.operation.pdfops.options.extractpdf.table_structure_type.TableStructureType">adobe.pdfservices.operation.pdfops.options.extractpdf.table_structure_type.TableStructureType</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_table_structure_format" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds the table structure format (currently csv only) for extracting structured information.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -393,8 +377,8 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.builder">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">builder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.builder" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.builder">
+<em class="property">static </em><code class="sig-name descname">builder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a Builder for <a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions" title="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ExtractPDFOptions</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -406,33 +390,33 @@ The resulting file may be stored in the system temporary directory. See <a class
 </dl>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elements_to_extract</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract">
+<em class="property">property </em><code class="sig-name descname">elements_to_extract</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of pdf element types to be extracted in a structured format from input file</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract_renditions">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elements_to_extract_renditions</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract_renditions" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract_renditions">
+<em class="property">property </em><code class="sig-name descname">elements_to_extract_renditions</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract_renditions" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of pdf element types whose renditions needs to be extracted from input file</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.get_char_info">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_char_info</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.get_char_info" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.get_char_info">
+<em class="property">property </em><code class="sig-name descname">get_char_info</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.get_char_info" title="Permalink to this definition">¶</a></dt>
 <dd><p>Boolean specifying whether to add character level bounding boxes to output json</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.include_styling_info">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">include_styling_info</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.include_styling_info" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.include_styling_info">
+<em class="property">property </em><code class="sig-name descname">include_styling_info</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.include_styling_info" title="Permalink to this definition">¶</a></dt>
 <dd><p>Boolean specifying whether to add PDF Elements Styling Info to output json</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.table_output_format">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">table_output_format</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.table_output_format" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.table_output_format">
+<em class="property">property </em><code class="sig-name descname">table_output_format</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.table_output_format" title="Permalink to this definition">¶</a></dt>
 <dd><p>export table in specified format - currently csv supported</p>
 </dd></dl>
 
@@ -441,12 +425,12 @@ The resulting file may be stored in the system temporary directory. See <a class
 </div>
 </div>
 <div class="section" id="autotag-pdf">
-<h2>Autotag PDF<a class="headerlink" href="#autotag-pdf" title="Permalink to this headline"></a></h2>
+<h2>Autotag PDF<a class="headerlink" href="#autotag-pdf" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="autotagpdfoperation">
-<h3>AutotagPDFOperation<a class="headerlink" href="#autotagpdfoperation" title="Permalink to this headline"></a></h3>
+<h3>AutotagPDFOperation<a class="headerlink" href="#autotagpdfoperation" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.pdfops.autotag_pdf_operation.</span></span><span class="sig-name descname"><span class="pre">AutotagPDFOperation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">create_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.pdfops.autotag_pdf_operation.</code><code class="sig-name descname">AutotagPDFOperation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">create_key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="../adobe.pdfservices.operation.html#adobe.pdfservices.operation.operation.Operation" title="adobe.pdfservices.operation.operation.Operation"><code class="xref py py-class docutils literal notranslate"><span class="pre">adobe.pdfservices.operation.operation.Operation</span></code></a></p>
 <p>An operation that enables clients to improve accessibility of the PDF document. It generates the tagged PDF,
 along with an optional XLSX report providing detailed information about the added tags. The operation replaces any
@@ -490,14 +474,14 @@ tags.</p>
 </pre></div>
 </div>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES">
-<span class="sig-name descname"><span class="pre">SUPPORTED_SOURCE_MEDIA_TYPES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{adobe.pdfservices.operation.internal.extension_media_type_mapping.ExtensionMediaTypeMapping.PDF.mime_type}</span></em><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES">
+<code class="sig-name descname">SUPPORTED_SOURCE_MEDIA_TYPES</code><em class="property"> = {adobe.pdfservices.operation.internal.extension_media_type_mapping.ExtensionMediaTypeMapping.PDF.mime_type}</em><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES" title="Permalink to this definition">¶</a></dt>
 <dd><p>Supported source file formats for <code class="xref py py-class docutils literal notranslate"><span class="pre">AutotagPdfOperation</span></code> is .pdf.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.create_new">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_new</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.create_new" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.create_new">
+<em class="property">classmethod </em><code class="sig-name descname">create_new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.create_new" title="Permalink to this definition">¶</a></dt>
 <dd><p>creates a new instance of <cite>AutotagPDFOperation</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -510,8 +494,8 @@ tags.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.execute">
-<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">execution_context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.execution_context.ExecutionContext" title="adobe.pdfservices.operation.execution_context.ExecutionContext"><span class="pre">adobe.pdfservices.operation.execution_context.ExecutionContext</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.execute" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">execution_context</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.execution_context.ExecutionContext" title="adobe.pdfservices.operation.execution_context.ExecutionContext">adobe.pdfservices.operation.execution_context.ExecutionContext</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.execute" title="Permalink to this definition">¶</a></dt>
 <dd><p>Executes this operation synchronously using the supplied context and returns a new AutotagPDFOutputFiles
 instance for the generated tagged pdf file and XLSX report file. The resulting file may be stored in the system
 temporary directory.
@@ -533,22 +517,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.get_options">
-<span class="sig-name descname"><span class="pre">get_options</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.get_options" title="Permalink to this definition"></a></dt>
-<dd><p>gets the AutotagPDFOptions.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>The options parameter of the operation</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions" title="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions">AutotagPDFOptions</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.set_input">
-<span class="sig-name descname"><span class="pre">set_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_file_ref</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref.FileRef" title="adobe.pdfservices.operation.io.file_ref.FileRef"><span class="pre">adobe.pdfservices.operation.io.file_ref.FileRef</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.set_input" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.set_input">
+<code class="sig-name descname">set_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source_file_ref</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref.FileRef" title="adobe.pdfservices.operation.io.file_ref.FileRef">adobe.pdfservices.operation.io.file_ref.FileRef</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.set_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets an input file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -564,8 +534,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.set_options">
-<span class="sig-name descname"><span class="pre">set_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">autotag_pdf_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions" title="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions"><span class="pre">adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.set_options" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.set_options">
+<code class="sig-name descname">set_options</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">autotag_pdf_options</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions" title="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions">adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.autotag_pdf_operation.AutotagPDFOperation.set_options" title="Permalink to this definition">¶</a></dt>
 <dd><p>sets the AutotagPDFOptions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -584,10 +554,10 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 
 </div>
 <div class="section" id="autotagpdfoptions">
-<h3>AutotagPDFOptions<a class="headerlink" href="#autotagpdfoptions" title="Permalink to this headline"></a></h3>
+<h3>AutotagPDFOptions<a class="headerlink" href="#autotagpdfoptions" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.</span></span><span class="sig-name descname"><span class="pre">AutotagPDFOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">generate_report</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_headings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.</code><code class="sig-name descname">AutotagPDFOptions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">generate_report</span></em>, <em class="sig-param"><span class="n">shift_headings</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>An Options Class that defines the options for AutotagPDFOperation.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">autotag_pdf_options</span><span class="p">:</span> <span class="n">AutotagPDFOptions</span> <span class="o">=</span> <span class="n">AutotagPDFOptions</span><span class="o">.</span><span class="n">builder</span><span class="p">()</span> \
@@ -597,19 +567,19 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </pre></div>
 </div>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Builder</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder">
+<em class="property">class </em><code class="sig-name descname">Builder</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>The builder for <a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions" title="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutotagPDFOptions</span></code></a>.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.build">
-<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.build" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.build" title="Permalink to this definition">¶</a></dt>
 <dd><p>builds and returns the AutotagPDFOptions instance</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_generate_report">
-<span class="sig-name descname"><span class="pre">with_generate_report</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_generate_report" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_generate_report">
+<code class="sig-name descname">with_generate_report</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_generate_report" title="Permalink to this definition">¶</a></dt>
 <dd><p>sets the Boolean specifying whether to generate an XLSX report containing the information about the tags</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -622,8 +592,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_shift_headings">
-<span class="sig-name descname"><span class="pre">with_shift_headings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_shift_headings" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_shift_headings">
+<code class="sig-name descname">with_shift_headings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_shift_headings" title="Permalink to this definition">¶</a></dt>
 <dd><p>sets the Boolean specifying whether to shift headings in the output PDF file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -638,8 +608,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.builder">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">builder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.builder" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.builder">
+<em class="property">static </em><code class="sig-name descname">builder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a Builder for <a class="reference internal" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions" title="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutotagPDFOptions</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -651,15 +621,15 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dl>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.generate_report">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate_report</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.generate_report" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.generate_report">
+<em class="property">property </em><code class="sig-name descname">generate_report</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.generate_report" title="Permalink to this definition">¶</a></dt>
 <dd><p>Boolean specifying whether to generate an XLSX report as an output</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.shift_headings">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shift_headings</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.shift_headings" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.shift_headings">
+<em class="property">property </em><code class="sig-name descname">shift_headings</code><a class="headerlink" href="#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.shift_headings" title="Permalink to this definition">¶</a></dt>
 <dd><p>Boolean specifying whether to shift the headings in the output PDF file</p>
 </dd></dl>
 
@@ -668,22 +638,22 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </div>
 </div>
 <div class="section" id="config">
-<h2>Config<a class="headerlink" href="#config" title="Permalink to this headline"></a></h2>
+<h2>Config<a class="headerlink" href="#config" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="clientconfig">
-<h3>ClientConfig<a class="headerlink" href="#clientconfig" title="Permalink to this headline"></a></h3>
+<h3>ClientConfig<a class="headerlink" href="#clientconfig" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.client_config.</span></span><span class="sig-name descname"><span class="pre">ClientConfig</span></span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.client_config.ClientConfig">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.client_config.</code><code class="sig-name descname">ClientConfig</code><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Encapsulates the API request configurations</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Builder</span></span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.client_config.ClientConfig.Builder">
+<em class="property">class </em><code class="sig-name descname">Builder</code><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Builds a <a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClientConfig</span></code></a> instance.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.build">
-<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.build" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.build" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a new <a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClientConfig</span></code></a> instance built from the current state of this builder.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -696,8 +666,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.from_file">
-<span class="sig-name descname"><span class="pre">from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_config_file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.from_file" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.from_file">
+<code class="sig-name descname">from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">client_config_file_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.from_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets the connect timeout and read timeout using the JSON client config file path.             All the keys in the JSON structure are optional.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -713,16 +683,15 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 <p>JSON structure:</p>
 <div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;connectTimeout&quot;</span><span class="p">:</span> <span class="s2">&quot;4000&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;readTimeout&quot;</span><span class="p">:</span> <span class="s2">&quot;20000&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;eu&quot;</span>
+    <span class="nt">&quot;readTimeout&quot;</span><span class="p">:</span> <span class="s2">&quot;20000&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_connect_timeout">
-<span class="sig-name descname"><span class="pre">with_connect_timeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connect_timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_connect_timeout" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_connect_timeout">
+<code class="sig-name descname">with_connect_timeout</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">connect_timeout</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_connect_timeout" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets the connect timeout. It should be greater than zero.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -738,25 +707,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_pdf_services_uri">
-<span class="sig-name descname"><span class="pre">with_pdf_services_uri</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdf_services_uri</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_pdf_services_uri" title="Permalink to this definition"></a></dt>
-<dd><p>Sets the pdf services uri link.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>pdf_services_uri</strong> (<em>str</em>) – url for the new rest api</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id0" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_read_timeout">
-<span class="sig-name descname"><span class="pre">with_read_timeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read_timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_read_timeout" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_read_timeout">
+<code class="sig-name descname">with_read_timeout</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">read_timeout</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_read_timeout" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets the read timeout. It should be greater than zero.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -774,8 +726,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.builder">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">builder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.builder" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.client_config.ClientConfig.builder">
+<em class="property">static </em><code class="sig-name descname">builder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a new <a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClientConfig</span></code></a> builder.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -791,15 +743,15 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 
 </div>
 <div class="section" id="clientconfigbuilder">
-<h3>ClientConfigBuilder<a class="headerlink" href="#clientconfigbuilder" title="Permalink to this headline"></a></h3>
+<h3>ClientConfigBuilder<a class="headerlink" href="#clientconfigbuilder" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="id0">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.client_config.ClientConfig.</span></span><span class="sig-name descname"><span class="pre">Builder</span></span><a class="headerlink" href="#id0" title="Permalink to this definition"></a></dt>
+<dt id="id0">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.client_config.ClientConfig.</code><code class="sig-name descname">Builder</code><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Builds a <code class="xref py py-class docutils literal notranslate"><span class="pre">ClientConfig</span></code> instance.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="id1">
-<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id1" title="Permalink to this definition"></a></dt>
+<dt id="id1">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a new <code class="xref py py-class docutils literal notranslate"><span class="pre">ClientConfig</span></code> instance built from the current state of this builder.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -812,8 +764,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id2">
-<span class="sig-name descname"><span class="pre">from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_config_file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition"></a></dt>
+<dt id="id2">
+<code class="sig-name descname">from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">client_config_file_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets the connect timeout and read timeout using the JSON client config file path.             All the keys in the JSON structure are optional.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -829,16 +781,15 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 <p>JSON structure:</p>
 <div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;connectTimeout&quot;</span><span class="p">:</span> <span class="s2">&quot;4000&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;readTimeout&quot;</span><span class="p">:</span> <span class="s2">&quot;20000&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;eu&quot;</span>
+    <span class="nt">&quot;readTimeout&quot;</span><span class="p">:</span> <span class="s2">&quot;20000&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id3">
-<span class="sig-name descname"><span class="pre">with_connect_timeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connect_timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id3" title="Permalink to this definition"></a></dt>
+<dt id="id3">
+<code class="sig-name descname">with_connect_timeout</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">connect_timeout</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets the connect timeout. It should be greater than zero.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -854,25 +805,8 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id4">
-<span class="sig-name descname"><span class="pre">with_pdf_services_uri</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdf_services_uri</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id4" title="Permalink to this definition"></a></dt>
-<dd><p>Sets the pdf services uri link.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>pdf_services_uri</strong> (<em>str</em>) – url for the new rest api</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id0" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="id5">
-<span class="sig-name descname"><span class="pre">with_read_timeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read_timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id5" title="Permalink to this definition"></a></dt>
+<dt id="id4">
+<code class="sig-name descname">with_read_timeout</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">read_timeout</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets the read timeout. It should be greater than zero.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -891,10 +825,10 @@ See <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref
 
 </div>
 <div class="section" id="executioncontext">
-<h3>ExecutionContext<a class="headerlink" href="#executioncontext" title="Permalink to this headline"></a></h3>
+<h3>ExecutionContext<a class="headerlink" href="#executioncontext" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.execution_context.ExecutionContext">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.execution_context.</span></span><span class="sig-name descname"><span class="pre">ExecutionContext</span></span><a class="headerlink" href="#adobe.pdfservices.operation.execution_context.ExecutionContext" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.execution_context.ExecutionContext">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.execution_context.</code><code class="sig-name descname">ExecutionContext</code><a class="headerlink" href="#adobe.pdfservices.operation.execution_context.ExecutionContext" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Represents the execution context of an Operation.
 An execution context typically consists of the desired authentication credentials and client configurations such as timeouts.</p>
@@ -928,8 +862,8 @@ An execution context typically consists of the desired authentication credential
 </pre></div>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.execution_context.ExecutionContext.create">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.auth.credentials.Credentials" title="adobe.pdfservices.operation.auth.credentials.Credentials"><span class="pre">adobe.pdfservices.operation.auth.credentials.Credentials</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><span class="pre">adobe.pdfservices.operation.client_config.ClientConfig</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.execution_context.ExecutionContext.create" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.execution_context.ExecutionContext.create">
+<em class="property">static </em><code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">credentials</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#adobe.pdfservices.operation.auth.credentials.Credentials" title="adobe.pdfservices.operation.auth.credentials.Credentials">adobe.pdfservices.operation.auth.credentials.Credentials</a></span></em>, <em class="sig-param"><span class="n">client_config</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig">adobe.pdfservices.operation.client_config.ClientConfig</a><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.execution_context.ExecutionContext.create" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a context instance using the provided Credentials and ClientConfig</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -952,25 +886,25 @@ An execution context typically consists of the desired authentication credential
 </div>
 </div>
 <div class="section" id="auth">
-<h2>Auth<a class="headerlink" href="#auth" title="Permalink to this headline"></a></h2>
+<h2>Auth<a class="headerlink" href="#auth" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="credentials">
-<h3>Credentials<a class="headerlink" href="#credentials" title="Permalink to this headline"></a></h3>
+<h3>Credentials<a class="headerlink" href="#credentials" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.credentials.Credentials">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.auth.credentials.</span></span><span class="sig-name descname"><span class="pre">Credentials</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.credentials.Credentials" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.credentials.Credentials">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.auth.credentials.</code><code class="sig-name descname">Credentials</code><a class="headerlink" href="#adobe.pdfservices.operation.auth.credentials.Credentials" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Marker base class for different types of credentials. Currently it supports only <a class="reference internal" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a>.
 The factory methods within this class can be used to create instances of credentials classes.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.credentials.Credentials.service_account_credentials_builder">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">service_account_credentials_builder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.credentials.Credentials.service_account_credentials_builder" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.credentials.Credentials.service_account_credentials_builder">
+<em class="property">static </em><code class="sig-name descname">service_account_credentials_builder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.credentials.Credentials.service_account_credentials_builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a new <a class="reference internal" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a> builder.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>An instance of ServiceAccountCredentials Builder.</p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-even"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -979,22 +913,22 @@ The factory methods within this class can be used to create instances of credent
 
 </div>
 <div class="section" id="serviceaccountcredentials">
-<h3>ServiceAccountCredentials<a class="headerlink" href="#serviceaccountcredentials" title="Permalink to this headline"></a></h3>
+<h3>ServiceAccountCredentials<a class="headerlink" href="#serviceaccountcredentials" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.auth.service_account_credentials.</span></span><span class="sig-name descname"><span class="pre">ServiceAccountCredentials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_secret</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">private_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">organization_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ims_base_uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">adobe.pdfservices.operation.internal.constants.service_constants.ServiceConstants.JWT_BASE_URI</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">claim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.auth.service_account_credentials.</code><code class="sig-name descname">ServiceAccountCredentials</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">client_id</span></em>, <em class="sig-param"><span class="n">client_secret</span></em>, <em class="sig-param"><span class="n">private_key</span></em>, <em class="sig-param"><span class="n">organization_id</span></em>, <em class="sig-param"><span class="n">account_id</span></em>, <em class="sig-param"><span class="n">ims_base_uri</span><span class="o">=</span><span class="default_value">adobe.pdfservices.operation.internal.service_constants.ServiceConstants.JWT_BASE_URI</span></em>, <em class="sig-param"><span class="n">claim</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#adobe.pdfservices.operation.auth.credentials.Credentials" title="adobe.pdfservices.operation.auth.credentials.Credentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">adobe.pdfservices.operation.auth.credentials.Credentials</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>Service Account credentials allow your application to call PDF Tools Extract API on behalf of the application itself,
 or on behalf of an enterprise organization. For getting the credentials,
 <a class="reference external" href="https://www.adobe.com/go/pdfextractapi_requestform">Click Here</a>.</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Builder</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">
+<em class="property">class </em><code class="sig-name descname">Builder</code><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Builds a <a class="reference internal" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a> instance.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.build">
-<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.build" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.build" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a new <a class="reference internal" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a> instance built from the current state of this builder.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1007,8 +941,8 @@ or on behalf of an enterprise organization. For getting the credentials,
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.from_file">
-<span class="sig-name descname"><span class="pre">from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials_file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.from_file" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.from_file">
+<code class="sig-name descname">from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">credentials_file_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.from_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets Service Account Credentials using the JSON credentials file path. All the keys in the JSON structure are optional.</p>
 <p>JSON structure:</p>
 <div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -1033,14 +967,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_account_id">
-<span class="sig-name descname"><span class="pre">with_account_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_account_id" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_account_id">
+<code class="sig-name descname">with_account_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">account_id</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_account_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set Account Id (format: <a class="reference external" href="mailto:id&#37;&#52;&#48;techacct&#46;adobe&#46;com">id<span>&#64;</span>techacct<span>&#46;</span>adobe<span>&#46;</span>com</a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1050,14 +984,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_id">
-<span class="sig-name descname"><span class="pre">with_client_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_id" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_id">
+<code class="sig-name descname">with_client_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">client_id</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set Client ID (API Key)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1067,14 +1001,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_secret">
-<span class="sig-name descname"><span class="pre">with_client_secret</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_secret" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_secret">
+<code class="sig-name descname">with_client_secret</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">client_secret</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_secret" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set Client Secret</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1084,14 +1018,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_organization_id">
-<span class="sig-name descname"><span class="pre">with_organization_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">organization_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_organization_id" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_organization_id">
+<code class="sig-name descname">with_organization_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">organization_id</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_organization_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set Organization Id (format: <a class="reference external" href="mailto:org_ident&#37;&#52;&#48;AdobeOrg">org_ident<span>&#64;</span>AdobeOrg</a>) that has been configured for access to PDF Tools API</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1101,14 +1035,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_private_key">
-<span class="sig-name descname"><span class="pre">with_private_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_private_key" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_private_key">
+<code class="sig-name descname">with_private_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">private_key</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_private_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set private key</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1118,46 +1052,46 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.account_id">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">account_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.account_id" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.account_id">
+<em class="property">property </em><code class="sig-name descname">account_id</code><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.account_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Account ID(format: <a class="reference external" href="mailto:id&#37;&#52;&#48;techacct&#46;adobe&#46;com">id<span>&#64;</span>techacct<span>&#46;</span>adobe<span>&#46;</span>com</a>)</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.claim">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">claim</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.claim" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.claim">
+<em class="property">property </em><code class="sig-name descname">claim</code><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.claim" title="Permalink to this definition">¶</a></dt>
 <dd><p>Identifies the Service for which Authorization(Access) Token will be issued</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_id">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">client_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_id" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_id">
+<em class="property">property </em><code class="sig-name descname">client_id</code><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Client Id (API Key)</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_secret">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">client_secret</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_secret" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_secret">
+<em class="property">property </em><code class="sig-name descname">client_secret</code><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_secret" title="Permalink to this definition">¶</a></dt>
 <dd><p>Client Secret</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.organization_id">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">organization_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.organization_id" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.organization_id">
+<em class="property">property </em><code class="sig-name descname">organization_id</code><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.organization_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Identifies the organization(format: <a class="reference external" href="mailto:org_ident&#37;&#52;&#48;AdobeOrg">org_ident<span>&#64;</span>AdobeOrg</a>) that has been configured for access to PDF Tools API.</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.private_key">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">private_key</span></span><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.private_key" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.private_key">
+<em class="property">property </em><code class="sig-name descname">private_key</code><a class="headerlink" href="#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.private_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Content of the Private Key (PEM format)</p>
 </dd></dl>
 
@@ -1165,15 +1099,15 @@ or on behalf of an enterprise organization. For getting the credentials,
 
 </div>
 <div class="section" id="serviceaccountcredentialsbuilder">
-<h3>ServiceAccountCredentialsBuilder<a class="headerlink" href="#serviceaccountcredentialsbuilder" title="Permalink to this headline"></a></h3>
+<h3>ServiceAccountCredentialsBuilder<a class="headerlink" href="#serviceaccountcredentialsbuilder" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="id6">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.</span></span><span class="sig-name descname"><span class="pre">Builder</span></span><a class="headerlink" href="#id6" title="Permalink to this definition"></a></dt>
+<dt id="id5">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.</code><code class="sig-name descname">Builder</code><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Builds a <code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code> instance.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="id7">
-<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id7" title="Permalink to this definition"></a></dt>
+<dt id="id6">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a new <code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code> instance built from the current state of this builder.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1186,8 +1120,8 @@ or on behalf of an enterprise organization. For getting the credentials,
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id8">
-<span class="sig-name descname"><span class="pre">from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials_file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id8" title="Permalink to this definition"></a></dt>
+<dt id="id7">
+<code class="sig-name descname">from_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">credentials_file_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id7" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets Service Account Credentials using the JSON credentials file path. All the keys in the JSON structure are optional.</p>
 <p>JSON structure:</p>
 <div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -1212,14 +1146,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id9">
-<span class="sig-name descname"><span class="pre">with_account_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id9" title="Permalink to this definition"></a></dt>
+<dt id="id8">
+<code class="sig-name descname">with_account_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">account_id</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id8" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set Account Id (format: <a class="reference external" href="mailto:id&#37;&#52;&#48;techacct&#46;adobe&#46;com">id<span>&#64;</span>techacct<span>&#46;</span>adobe<span>&#46;</span>com</a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1229,14 +1163,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id10">
-<span class="sig-name descname"><span class="pre">with_client_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id10" title="Permalink to this definition"></a></dt>
+<dt id="id9">
+<code class="sig-name descname">with_client_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">client_id</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id9" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set Client ID (API Key)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1246,14 +1180,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id11">
-<span class="sig-name descname"><span class="pre">with_client_secret</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id11" title="Permalink to this definition"></a></dt>
+<dt id="id10">
+<code class="sig-name descname">with_client_secret</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">client_secret</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id10" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set Client Secret</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1263,14 +1197,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id12">
-<span class="sig-name descname"><span class="pre">with_organization_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">organization_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id12" title="Permalink to this definition"></a></dt>
+<dt id="id11">
+<code class="sig-name descname">with_organization_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">organization_id</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id11" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set Organization Id (format: <a class="reference external" href="mailto:org_ident&#37;&#52;&#48;AdobeOrg">org_ident<span>&#64;</span>AdobeOrg</a>) that has been configured for access to PDF Tools API</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1280,14 +1214,14 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="id13">
-<span class="sig-name descname"><span class="pre">with_private_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id13" title="Permalink to this definition"></a></dt>
+<dt id="id12">
+<code class="sig-name descname">with_private_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">private_key</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id12" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set private key</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1297,7 +1231,7 @@ or on behalf of an enterprise organization. For getting the credentials,
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#id6" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
+<dd class="field-odd"><p><a class="reference internal" href="#id5" title="adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder">ServiceAccountCredentials.Builder</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1307,19 +1241,19 @@ or on behalf of an enterprise organization. For getting the credentials,
 </div>
 </div>
 <div class="section" id="io">
-<h2>IO<a class="headerlink" href="#io" title="Permalink to this headline"></a></h2>
+<h2>IO<a class="headerlink" href="#io" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="fileref">
-<h3>FileRef<a class="headerlink" href="#fileref" title="Permalink to this headline"></a></h3>
+<h3>FileRef<a class="headerlink" href="#fileref" title="Permalink to this headline">¶</a></h3>
 <dl class="py class">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.io.file_ref.FileRef">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.io.file_ref.</span></span><span class="sig-name descname"><span class="pre">FileRef</span></span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.io.file_ref.FileRef">
+<em class="property">class </em><code class="sig-prename descclassname">adobe.pdfservices.operation.io.file_ref.</code><code class="sig-name descname">FileRef</code><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <p>This class represents a local file. It is typically used by an SDK Operation which accepts or returns files.</p>
 <p>When a FileRef instance is created by this SDK while referring to a temporary file location, calling any of the
 methods to save the fileRef (For example, <a class="reference internal" href="#adobe.pdfservices.operation.io.file_ref.FileRef.create_from_stream" title="adobe.pdfservices.operation.io.file_ref.FileRef.create_from_stream"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_from_stream()</span></code></a> etc.) will delete the temporary file.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.io.file_ref.FileRef.create_from_local_file">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_from_local_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">local_source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">media_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.create_from_local_file" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.io.file_ref.FileRef.create_from_local_file">
+<em class="property">static </em><code class="sig-name descname">create_from_local_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">local_source</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">media_type</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>str<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.create_from_local_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a FileRef instance from a local file path. If no media type is provided, it will be inferred
 from the file extension.</p>
 <dl class="field-list simple">
@@ -1339,8 +1273,8 @@ from the file extension.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.io.file_ref.FileRef.create_from_stream">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_from_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">_io.BufferedReader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">media_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.create_from_stream" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.io.file_ref.FileRef.create_from_stream">
+<em class="property">static </em><code class="sig-name descname">create_from_stream</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_stream</span><span class="p">:</span> <span class="n">_io.BufferedReader</span></em>, <em class="sig-param"><span class="n">media_type</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.create_from_stream" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a FileRef instance from a readable stream using the specified media type.
 The stream is not read by this method but by consumers of file content i.e. the execute method of an operation
 such as <code class="xref py py-func docutils literal notranslate"><span class="pre">execute()</span></code>.</p>
@@ -1361,19 +1295,13 @@ such as <code class="xref py py-func docutils literal notranslate"><span class="
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.io.file_ref.FileRef.get_media_type">
-<span class="sig-name descname"><span class="pre">get_media_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.get_media_type" title="Permalink to this definition"></a></dt>
-<dd><p>returns the media type</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.io.file_ref.FileRef.save_as">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_as</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">local_file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.save_as" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.io.file_ref.FileRef.save_as">
+<em class="property">abstract </em><code class="sig-name descname">save_as</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">local_file_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.save_as" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.io.file_ref.FileRef.write_to_stream">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">write_to_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer_stream</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.write_to_stream" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.io.file_ref.FileRef.write_to_stream">
+<em class="property">abstract </em><code class="sig-name descname">write_to_stream</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">writer_stream</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.io.file_ref.FileRef.write_to_stream" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1381,91 +1309,91 @@ such as <code class="xref py py-func docutils literal notranslate"><span class="
 </div>
 </div>
 <div class="section" id="exceptions">
-<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"></a></h2>
-<div class="section" id="id14">
-<h3>Exceptions<a class="headerlink" href="#id14" title="Permalink to this headline"></a></h3>
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id13">
+<h3>Exceptions<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <span class="target" id="module-adobe.pdfservices.operation.exception.exceptions"></span><dl class="py exception">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.SdkException">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.exception.exceptions.</span></span><span class="sig-name descname"><span class="pre">SdkException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_tracking_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.SdkException" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.exception.exceptions.SdkException">
+<em class="property">exception </em><code class="sig-prename descclassname">adobe.pdfservices.operation.exception.exceptions.</code><code class="sig-name descname">SdkException</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">request_tracking_id</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.SdkException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>SdkException is typically thrown for client-side or network errors.</p>
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.SdkException.request_tracking_id">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">request_tracking_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.SdkException.request_tracking_id" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.exception.exceptions.SdkException.request_tracking_id">
+<em class="property">property </em><code class="sig-name descname">request_tracking_id</code><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.SdkException.request_tracking_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>The request tracking id of the exception.</p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py exception">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.exception.exceptions.</span></span><span class="sig-name descname"><span class="pre">ServiceApiException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_tracking_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNKNOWN'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException">
+<em class="property">exception </em><code class="sig-prename descclassname">adobe.pdfservices.operation.exception.exceptions.</code><code class="sig-name descname">ServiceApiException</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">request_tracking_id</span></em>, <em class="sig-param"><span class="n">status_code</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">error_code</span><span class="o">=</span><span class="default_value">'UNKNOWN'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>ServiceApiException is thrown when an underlying service API call results in an error.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_ERROR_CODE">
-<span class="sig-name descname"><span class="pre">DEFAULT_ERROR_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'UNKNOWN'</span></em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_ERROR_CODE" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_ERROR_CODE">
+<code class="sig-name descname">DEFAULT_ERROR_CODE</code><em class="property"> = 'UNKNOWN'</em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_ERROR_CODE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the HTTP Status code or DEFAULT_STATUS_CODE if the status code doesn’t adequately represent the error.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_STATUS_CODE">
-<span class="sig-name descname"><span class="pre">DEFAULT_STATUS_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_STATUS_CODE" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_STATUS_CODE">
+<code class="sig-name descname">DEFAULT_STATUS_CODE</code><em class="property"> = 0</em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_STATUS_CODE" title="Permalink to this definition">¶</a></dt>
 <dd><p>The default value of status code if there is no status code for this service exception.</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.error_code">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">error_code</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.error_code" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.error_code">
+<em class="property">property </em><code class="sig-name descname">error_code</code><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.error_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the detailed message of this error.</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.request_tracking_id">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">request_tracking_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.request_tracking_id" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.request_tracking_id">
+<em class="property">property </em><code class="sig-name descname">request_tracking_id</code><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.request_tracking_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>The request tracking id of the exception.</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.status_code">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status_code</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.status_code" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.status_code">
+<em class="property">property </em><code class="sig-name descname">status_code</code><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.status_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the HTTP Status code or DEFAULT_STATUS_CODE if the status code doesn’t adequately represent the error.</p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py exception">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.exception.exceptions.</span></span><span class="sig-name descname"><span class="pre">ServiceUsageException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_tracking_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">429</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNKNOWN'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException">
+<em class="property">exception </em><code class="sig-prename descclassname">adobe.pdfservices.operation.exception.exceptions.</code><code class="sig-name descname">ServiceUsageException</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">request_tracking_id</span></em>, <em class="sig-param"><span class="n">status_code</span><span class="o">=</span><span class="default_value">429</span></em>, <em class="sig-param"><span class="n">error_code</span><span class="o">=</span><span class="default_value">'UNKNOWN'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>ServiceUsageError is thrown when either service usage limit has been reached or credentials quota has been exhausted.</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_ERROR_CODE">
-<span class="sig-name descname"><span class="pre">DEFAULT_ERROR_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'UNKNOWN'</span></em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_ERROR_CODE" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_ERROR_CODE">
+<code class="sig-name descname">DEFAULT_ERROR_CODE</code><em class="property"> = 'UNKNOWN'</em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_ERROR_CODE" title="Permalink to this definition">¶</a></dt>
 <dd><p>The default value of error code if there is no status code for this service failure.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_STATUS_CODE">
-<span class="sig-name descname"><span class="pre">DEFAULT_STATUS_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">429</span></em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_STATUS_CODE" title="Permalink to this definition"></a></dt>
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_STATUS_CODE">
+<code class="sig-name descname">DEFAULT_STATUS_CODE</code><em class="property"> = 429</em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_STATUS_CODE" title="Permalink to this definition">¶</a></dt>
 <dd><p>The default value of status code if there is no status code for this service failure.</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.error_code">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">error_code</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.error_code" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.error_code">
+<em class="property">property </em><code class="sig-name descname">error_code</code><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.error_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the detailed message of this error.</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.request_tracking_id">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">request_tracking_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.request_tracking_id" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.request_tracking_id">
+<em class="property">property </em><code class="sig-name descname">request_tracking_id</code><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.request_tracking_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>The request tracking id of the exception.</p>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.status_code">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status_code</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.status_code" title="Permalink to this definition"></a></dt>
+<dl class="py method">
+<dt id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.status_code">
+<em class="property">property </em><code class="sig-name descname">status_code</code><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.status_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the HTTP Status code or DEFAULT_STATUS_CODE if the status code doesn’t adequately represent the error.</p>
 </dd></dl>
 
