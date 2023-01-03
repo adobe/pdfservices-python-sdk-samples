@@ -18,6 +18,8 @@ the end of creation of credentials via [Get Started](https://www.adobe.io/apis/d
 The SDK also supports providing the authentication credentials at runtime, without storing them in a config file. Please
 refer this [section](#extract-text-elements-by-providing-in-memory-authentication-credentials) to 
 know more.
+Additionally, SDK can be configured to process the documents in the specified region.
+Please refer this [section](#extract-text-elements-by-providing-the-region) to know more.
 
 ## Installation
 
@@ -147,6 +149,14 @@ along with renditions as described in [section](#structured-information-output-f
 
 ```$xslt
 python src/extractpdf/extract_txt_with_styling_info_from_pdf.py
+```
+
+##### Extract Text elements (by providing the region)
+
+The sample class ```extract_txt_from_pdf_with_specified_region.py``` highlights how to configure the SDK to process the documents in the specified region.
+
+```$xslt
+python src/extractpdf/extract_txt_from_pdf_with_specified_region.py
 ```
 
 ### Contributing
