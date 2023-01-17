@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>adobe.pdfservices.operation package &mdash; pdfservices-sdk  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="index.html" class="icon icon-home"> pdfservices-sdk
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#clientconfig">ClientConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#clientconfigbuilder">ClientConfigBuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#credentials">Credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#executioncontext">ExecutionContext</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#extractpdfoperation">ExtractPDFOperation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#extractpdfoptions">ExtractPDFOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#fileref">FileRef</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#module-adobe.pdfservices.operation.exception.exceptions">Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#serviceaccountcredentials">ServiceAccountCredentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#serviceaccountcredentialsbuilder">ServiceAccountCredentialsBuilder</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pdfservices-sdk</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>adobe.pdfservices.operation package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="adobe-pdfservices-operation-package">
+<h1>adobe.pdfservices.operation package<a class="headerlink" href="#adobe-pdfservices-operation-package" title="Permalink to this headline"></a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="adobe.pdfservices.operation.auth.html">adobe.pdfservices.operation.auth package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.auth.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.auth.html#module-adobe.pdfservices.operation.auth.credentials">adobe.pdfservices.operation.auth.credentials module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.auth.html#module-adobe.pdfservices.operation.auth.service_account_credentials">adobe.pdfservices.operation.auth.service_account_credentials module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.auth.html#module-adobe.pdfservices.operation.auth">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adobe.pdfservices.operation.exception.html">adobe.pdfservices.operation.exception package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.exception.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.exception.html#module-adobe.pdfservices.operation.exception.exceptions">adobe.pdfservices.operation.exception.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.exception.html#module-adobe.pdfservices.operation.exception">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adobe.pdfservices.operation.io.html">adobe.pdfservices.operation.io package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.io.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.io.html#module-adobe.pdfservices.operation.io.file_ref">adobe.pdfservices.operation.io.file_ref module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.io.html#module-adobe.pdfservices.operation.io">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adobe.pdfservices.operation.pdfops.html">adobe.pdfservices.operation.pdfops package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.pdfops.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="adobe.pdfservices.operation.pdfops.options.html">adobe.pdfservices.operation.pdfops.options package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="adobe.pdfservices.operation.pdfops.options.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="adobe.pdfservices.operation.pdfops.options.html#module-adobe.pdfservices.operation.pdfops.options">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.pdfops.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.pdfops.html#module-adobe.pdfservices.operation.pdfops.extract_pdf_operation">adobe.pdfservices.operation.pdfops.extract_pdf_operation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adobe.pdfservices.operation.pdfops.html#module-adobe.pdfservices.operation.pdfops">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="module-adobe.pdfservices.operation.client_config">
+<span id="adobe-pdfservices-operation-client-config-module"></span><h2>adobe.pdfservices.operation.client_config module<a class="headerlink" href="#module-adobe.pdfservices.operation.client_config" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.client_config.</span></span><span class="sig-name descname"><span class="pre">ClientConfig</span></span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Encapsulates the API request configurations</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Builder</span></span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Builds a <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClientConfig</span></code></a> instance.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.build">
+<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.build" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a new <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClientConfig</span></code></a> instance built from the current state of this builder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A ClientConfig instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig">ClientConfig</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.from_file">
+<span class="sig-name descname"><span class="pre">from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_config_file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.from_file" title="Permalink to this definition"></a></dt>
+<dd><p>Sets the connect timeout and read timeout using the JSON client config file path.             All the keys in the JSON structure are optional.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>client_config_file_path</strong> (<em>str</em>) – JSON client config file path</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id0" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
+</dd>
+</dl>
+<p>JSON structure:</p>
+<div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;connectTimeout&quot;</span><span class="p">:</span> <span class="s2">&quot;4000&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;readTimeout&quot;</span><span class="p">:</span> <span class="s2">&quot;20000&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;eu&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_connect_timeout">
+<span class="sig-name descname"><span class="pre">with_connect_timeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connect_timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_connect_timeout" title="Permalink to this definition"></a></dt>
+<dd><p>Sets the connect timeout. It should be greater than zero.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>connect_timeout</strong> (<em>int</em>) – determines the timeout in milliseconds until a connection is established in the                 API calls. Default value is 4000 milliseconds</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id0" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_read_timeout">
+<span class="sig-name descname"><span class="pre">with_read_timeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read_timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_read_timeout" title="Permalink to this definition"></a></dt>
+<dd><p>Sets the read timeout. It should be greater than zero.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>read_timeout</strong> (<em>int</em>) – Defines the read timeout in milliseconds, The number of milliseconds the client will                 wait for the server to send a response after the connection is established.                Default value is 10000 milliseconds</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id0" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_region">
+<span class="sig-name descname"><span class="pre">with_region</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">adobe.pdfservices.operation.region.Region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_region" title="Permalink to this definition"></a></dt>
+<dd><p>Updates the relevant value for the region.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>region</strong> (<em>Region</em>) – Service region(US or EU). Default value is US.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#id0" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.builder">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">builder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.builder" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a new <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClientConfig</span></code></a> builder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A ClientConfig.Builder instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="reference/index.html#id0" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-adobe.pdfservices.operation.execution_context">
+<span id="adobe-pdfservices-operation-execution-context-module"></span><h2>adobe.pdfservices.operation.execution_context module<a class="headerlink" href="#module-adobe.pdfservices.operation.execution_context" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.execution_context.ExecutionContext">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.execution_context.</span></span><span class="sig-name descname"><span class="pre">ExecutionContext</span></span><a class="headerlink" href="#adobe.pdfservices.operation.execution_context.ExecutionContext" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents the execution context of an Operation.
+An execution context typically consists of the desired authentication credentials and client configurations such as timeouts.</p>
+<p>For each set of credentials, a ExecutionContext instance can be reused across operations.</p>
+<p>Sample Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">base_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+
+    <span class="n">credentials</span> <span class="o">=</span> <span class="n">Credentials</span><span class="o">.</span><span class="n">service_account_credentials_builder</span><span class="p">()</span> \
+        <span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="n">base_path</span> <span class="o">+</span> <span class="s2">&quot;/pdfservices-api-credentials.json&quot;</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+
+    <span class="n">execution_context</span> <span class="o">=</span> <span class="n">ExecutionContext</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">credentials</span><span class="p">)</span>
+    <span class="n">extract_pdf_operation</span> <span class="o">=</span> <span class="n">ExtractPDFOperation</span><span class="o">.</span><span class="n">create_new</span><span class="p">()</span>
+
+    <span class="n">source</span> <span class="o">=</span> <span class="n">FileRef</span><span class="o">.</span><span class="n">create_from_local_file</span><span class="p">(</span><span class="n">base_path</span> <span class="o">+</span> <span class="s2">&quot;/resources/extractPdfInput.pdf&quot;</span><span class="p">)</span>
+    <span class="n">extract_pdf_operation</span><span class="o">.</span><span class="n">set_input</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+
+    <span class="n">extract_pdf_options</span><span class="p">:</span> <span class="n">ExtractPDFOptions</span> <span class="o">=</span> <span class="n">ExtractPDFOptions</span><span class="o">.</span><span class="n">builder</span><span class="p">()</span> \
+        <span class="o">.</span><span class="n">with_elements_to_extract</span><span class="p">([</span><span class="n">ExtractElementType</span><span class="o">.</span><span class="n">TEXT</span><span class="p">,</span> <span class="n">ExtractElementType</span><span class="o">.</span><span class="n">TABLES</span><span class="p">])</span> \
+        <span class="o">.</span><span class="n">with_elements_to_extract_renditions</span><span class="p">([</span><span class="n">ExtractRenditionsElementType</span><span class="o">.</span><span class="n">TABLES</span><span class="p">,</span> <span class="n">ExtractRenditionsElementType</span><span class="o">.</span><span class="n">FIGURES</span><span class="p">])</span> \
+        <span class="o">.</span><span class="n">with_get_char_info</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> \
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+    <span class="n">extract_pdf_operation</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span><span class="n">extract_pdf_options</span><span class="p">)</span>
+
+    <span class="n">result</span><span class="p">:</span> <span class="n">FileRef</span> <span class="o">=</span> <span class="n">extract_pdf_operation</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">execution_context</span><span class="p">)</span>
+
+    <span class="n">result</span><span class="o">.</span><span class="n">save_as</span><span class="p">(</span><span class="n">base_path</span> <span class="o">+</span> <span class="s2">&quot;/output/ExtractTextTableWithFigureTableRendition.zip&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="p">(</span><span class="n">ServiceApiException</span><span class="p">,</span> <span class="n">ServiceUsageException</span><span class="p">,</span> <span class="n">SdkException</span><span class="p">):</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s2">&quot;Exception encountered while executing operation&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.execution_context.ExecutionContext.create">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.credentials.Credentials" title="adobe.pdfservices.operation.auth.credentials.Credentials"><span class="pre">adobe.pdfservices.operation.auth.credentials.Credentials</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><span class="pre">adobe.pdfservices.operation.client_config.ClientConfig</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.execution_context.ExecutionContext.create" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a context instance using the provided Credentials and ClientConfig</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>credentials</strong> (<a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.credentials.Credentials" title="adobe.pdfservices.operation.auth.credentials.Credentials"><em>Credentials</em></a>) – A Credentials instance</p></li>
+<li><p><strong>client_config</strong> (<a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig" title="adobe.pdfservices.operation.client_config.ClientConfig"><em>ClientConfig</em></a><em>, </em><em>optional</em>) – A ClientConfig instance for providing custom http timeouts, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new <a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.execution_context.ExecutionContext" title="adobe.pdfservices.operation.execution_context.ExecutionContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">ExecutionContext</span></code></a> instance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.execution_context.ExecutionContext" title="adobe.pdfservices.operation.execution_context.ExecutionContext">ExecutionContext</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-adobe.pdfservices.operation.operation">
+<span id="adobe-pdfservices-operation-operation-module"></span><h2>adobe.pdfservices.operation.operation module<a class="headerlink" href="#module-adobe.pdfservices.operation.operation" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.operation.Operation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.operation.</span></span><span class="sig-name descname"><span class="pre">Operation</span></span><a class="headerlink" href="#adobe.pdfservices.operation.operation.Operation" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.operation.Operation.execute">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">execution_context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.execution_context.ExecutionContext" title="adobe.pdfservices.operation.execution_context.ExecutionContext"><span class="pre">adobe.pdfservices.operation.execution_context.ExecutionContext</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.operation.Operation.execute" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-adobe.pdfservices.operation">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-adobe.pdfservices.operation" title="Permalink to this headline"></a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Adobe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
