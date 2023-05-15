@@ -1,9 +1,9 @@
 # Samples for the Adobe PDFServices Python SDK
 
-This sample project helps you get started with the Adobe PDFServices Python SDK which currently has only Extract PDF Operation.
+This sample project helps you get started with the Adobe PDFServices Python SDK which currently has Extract PDF and Autotag PDF Operations.
 
 The sample classes illustrate how to perform PDF-related extraction (extracting content of PDF in user friendly 
-structured format) using the SDK.
+structured format) and autotagging (tagging content of PDF with rich structural information) using the SDK.
 
 ## Prerequisites
 The sample application has the following requirements:
@@ -40,7 +40,7 @@ Default Logging Config:
 The following sub-sections describe how to run the samples. Prior to running the samples, check that the credentials 
 file is set up as described above and that the project has been built.
 
-The code itself is in the ```extractpdf``` folder. Test files used by the samples can be found in ```resources/```. When executed, all samples create an ```output``` 
+The code itself is in the ```extractpdf``` and ```autotag``` folders. Test files used by the samples can be found in ```resources/```. When executed, all samples create an ```output``` 
 child folder under the project root directory to store their results.
 
 ### Extract PDF
@@ -157,6 +157,41 @@ The sample class ```extract_txt_from_pdf_with_specified_region.py``` highlights 
 
 ```$xslt
 python src/extractpdf/extract_txt_from_pdf_with_specified_region.py
+```
+
+### Autotag PDF
+
+These samples illustrate auto-tagging a PDF and generating the tagged PDF and an optional report
+which contains the information about the tags the tagged document contains.
+
+#### Generates tagged PDF from a PDF
+
+The sample class ```autotag_pdf.py``` generates tagged PDF from a PDF.
+
+```$xslt
+python src/autotagpdf/autotag_pdf.py
+```
+
+#### Generates tagged PDF along with a report and shift the headings in the output PDF file
+
+The sample class ```autotag_pdf_with_options.py``` generates tagged PDF with a report and shift the headings in the output PDF file.
+
+```$xslt
+python src/autotagpdf/autotag_pdf_with_options.py
+```
+
+#### Generates tagged PDF by setting options with command line arguments
+
+The sample class ```autotag_pdf_parameterised.py``` generates tagged PDF by setting options through command line arguments
+
+Here is a sample list of command line arguments and their description: </br>
+--input &lt; input file path &gt; </br>
+--output &lt; output file path &gt; </br>
+--report { If this argument is present then the output will be generated with the report } </br>
+--shift_headings { If this argument is present then the headings will be shifted in the output PDF file } </br>
+
+```$xslt
+python src/autotagpdf/autotag_pdf_parameterised.py --report --shift_headings --input resources/autotagPdfInput.pdf --output output/AutotagPDFParamaterised/
 ```
 
 ### Contributing

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>adobe.pdfservices.operation.exception package &mdash; pdfservices-sdk  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pdfservices-sdk
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#clientconfig">ClientConfig</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig"><code class="docutils literal notranslate"><span class="pre">ClientConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig.Builder"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig.Builder.build"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.build()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig.Builder.from_file"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.from_file()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_connect_timeout"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.with_connect_timeout()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_read_timeout"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.with_read_timeout()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_region"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.with_region()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.client_config.ClientConfig.builder"><code class="docutils literal notranslate"><span class="pre">ClientConfig.builder()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#clientconfigbuilder">ClientConfigBuilder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#id0"><code class="docutils literal notranslate"><span class="pre">Builder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id1"><code class="docutils literal notranslate"><span class="pre">Builder.build()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id2"><code class="docutils literal notranslate"><span class="pre">Builder.from_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id3"><code class="docutils literal notranslate"><span class="pre">Builder.with_connect_timeout()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id4"><code class="docutils literal notranslate"><span class="pre">Builder.with_read_timeout()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id5"><code class="docutils literal notranslate"><span class="pre">Builder.with_region()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#credentials">Credentials</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.credentials.Credentials"><code class="docutils literal notranslate"><span class="pre">Credentials</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.credentials.Credentials.service_account_credentials_builder"><code class="docutils literal notranslate"><span class="pre">Credentials.service_account_credentials_builder()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#executioncontext">ExecutionContext</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.execution_context.ExecutionContext"><code class="docutils literal notranslate"><span class="pre">ExecutionContext</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.execution_context.ExecutionContext.create"><code class="docutils literal notranslate"><span class="pre">ExecutionContext.create()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#extractpdfoperation">ExtractPDFOperation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOperation</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOperation.SUPPORTED_SOURCE_MEDIA_TYPES</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.create_new"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOperation.create_new()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.execute"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOperation.execute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.get_options"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOperation.get_options()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_input"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOperation.set_input()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.extract_pdf_operation.ExtractPDFOperation.set_options"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOperation.set_options()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#extractpdfoptions">ExtractPDFOptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.build"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder.build()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder.with_element_to_extract()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_element_to_extract_renditions"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder.with_element_to_extract_renditions()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder.with_elements_to_extract()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_elements_to_extract_renditions"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder.with_elements_to_extract_renditions()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_get_char_info"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder.with_get_char_info()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_include_styling_info"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder.with_include_styling_info()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.Builder.with_table_structure_format"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.Builder.with_table_structure_format()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.builder"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.builder()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.elements_to_extract</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.elements_to_extract_renditions"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.elements_to_extract_renditions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.get_char_info"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.get_char_info</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.include_styling_info"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.include_styling_info</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.extractpdf.extract_pdf_options.ExtractPDFOptions.table_output_format"><code class="docutils literal notranslate"><span class="pre">ExtractPDFOptions.table_output_format</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#autotagpdfoperation">AutotagPDFOperation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#autotagpdfoptions">AutotagPDFOptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions"><code class="docutils literal notranslate"><span class="pre">AutotagPDFOptions</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder"><code class="docutils literal notranslate"><span class="pre">AutotagPDFOptions.Builder</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.build"><code class="docutils literal notranslate"><span class="pre">AutotagPDFOptions.Builder.build()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_generate_report"><code class="docutils literal notranslate"><span class="pre">AutotagPDFOptions.Builder.with_generate_report()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.Builder.with_shift_headings"><code class="docutils literal notranslate"><span class="pre">AutotagPDFOptions.Builder.with_shift_headings()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.builder"><code class="docutils literal notranslate"><span class="pre">AutotagPDFOptions.builder()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.generate_report"><code class="docutils literal notranslate"><span class="pre">AutotagPDFOptions.generate_report</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.pdfops.options.autotagpdf.autotag_pdf_options.AutotagPDFOptions.shift_headings"><code class="docutils literal notranslate"><span class="pre">AutotagPDFOptions.shift_headings</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#fileref">FileRef</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.io.file_ref.FileRef"><code class="docutils literal notranslate"><span class="pre">FileRef</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.io.file_ref.FileRef.create_from_local_file"><code class="docutils literal notranslate"><span class="pre">FileRef.create_from_local_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.io.file_ref.FileRef.create_from_stream"><code class="docutils literal notranslate"><span class="pre">FileRef.create_from_stream()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.io.file_ref.FileRef.get_media_type"><code class="docutils literal notranslate"><span class="pre">FileRef.get_media_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.io.file_ref.FileRef.save_as"><code class="docutils literal notranslate"><span class="pre">FileRef.save_as()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.io.file_ref.FileRef.write_to_stream"><code class="docutils literal notranslate"><span class="pre">FileRef.write_to_stream()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#module-adobe.pdfservices.operation.exception.exceptions">Exceptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.SdkException"><code class="docutils literal notranslate"><span class="pre">SdkException</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.SdkException.request_tracking_id"><code class="docutils literal notranslate"><span class="pre">SdkException.request_tracking_id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceApiException"><code class="docutils literal notranslate"><span class="pre">ServiceApiException</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_ERROR_CODE"><code class="docutils literal notranslate"><span class="pre">ServiceApiException.DEFAULT_ERROR_CODE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_STATUS_CODE"><code class="docutils literal notranslate"><span class="pre">ServiceApiException.DEFAULT_STATUS_CODE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.error_code"><code class="docutils literal notranslate"><span class="pre">ServiceApiException.error_code</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.request_tracking_id"><code class="docutils literal notranslate"><span class="pre">ServiceApiException.request_tracking_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.status_code"><code class="docutils literal notranslate"><span class="pre">ServiceApiException.status_code</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException"><code class="docutils literal notranslate"><span class="pre">ServiceUsageException</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_ERROR_CODE"><code class="docutils literal notranslate"><span class="pre">ServiceUsageException.DEFAULT_ERROR_CODE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_STATUS_CODE"><code class="docutils literal notranslate"><span class="pre">ServiceUsageException.DEFAULT_STATUS_CODE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.error_code"><code class="docutils literal notranslate"><span class="pre">ServiceUsageException.error_code</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.request_tracking_id"><code class="docutils literal notranslate"><span class="pre">ServiceUsageException.request_tracking_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.status_code"><code class="docutils literal notranslate"><span class="pre">ServiceUsageException.status_code</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#serviceaccountcredentials">ServiceAccountCredentials</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.Builder</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.build"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.Builder.build()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.from_file"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.Builder.from_file()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_account_id"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.Builder.with_account_id()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_id"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.Builder.with_client_id()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_client_secret"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.Builder.with_client_secret()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_organization_id"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.Builder.with_organization_id()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.Builder.with_private_key"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.Builder.with_private_key()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.account_id"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.account_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_id"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.client_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.client_secret"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.client_secret</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.organization_id"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.organization_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#adobe.pdfservices.operation.auth.service_account_credentials.ServiceAccountCredentials.private_key"><code class="docutils literal notranslate"><span class="pre">ServiceAccountCredentials.private_key</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/index.html#serviceaccountcredentialsbuilder">ServiceAccountCredentialsBuilder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/index.html#id6"><code class="docutils literal notranslate"><span class="pre">Builder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id7"><code class="docutils literal notranslate"><span class="pre">Builder.build()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id8"><code class="docutils literal notranslate"><span class="pre">Builder.from_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id9"><code class="docutils literal notranslate"><span class="pre">Builder.with_account_id()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id10"><code class="docutils literal notranslate"><span class="pre">Builder.with_client_id()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id11"><code class="docutils literal notranslate"><span class="pre">Builder.with_client_secret()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id12"><code class="docutils literal notranslate"><span class="pre">Builder.with_organization_id()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/index.html#id13"><code class="docutils literal notranslate"><span class="pre">Builder.with_private_key()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pdfservices-sdk</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">adobe.pdfservices.operation.exception package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adobe-pdfservices-operation-exception-package">
+<h1>adobe.pdfservices.operation.exception package<a class="headerlink" href="#adobe-pdfservices-operation-exception-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-adobe.pdfservices.operation.exception.exceptions">
+<span id="adobe-pdfservices-operation-exception-exceptions-module"></span><h2>adobe.pdfservices.operation.exception.exceptions module<a class="headerlink" href="#module-adobe.pdfservices.operation.exception.exceptions" title="Permalink to this heading"></a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.SdkException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.exception.exceptions.</span></span><span class="sig-name descname"><span class="pre">SdkException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_tracking_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.SdkException" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>SdkException is typically thrown for client-side or network errors.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.SdkException.request_tracking_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">request_tracking_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.SdkException.request_tracking_id" title="Permalink to this definition"></a></dt>
+<dd><p>The request tracking id of the exception.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.exception.exceptions.</span></span><span class="sig-name descname"><span class="pre">ServiceApiException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_tracking_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNKNOWN'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>ServiceApiException is thrown when an underlying service API call results in an error.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_ERROR_CODE">
+<span class="sig-name descname"><span class="pre">DEFAULT_ERROR_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'UNKNOWN'</span></em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_ERROR_CODE" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the HTTP Status code or DEFAULT_STATUS_CODE if the status code doesn’t adequately represent the error.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_STATUS_CODE">
+<span class="sig-name descname"><span class="pre">DEFAULT_STATUS_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.DEFAULT_STATUS_CODE" title="Permalink to this definition"></a></dt>
+<dd><p>The default value of status code if there is no status code for this service exception.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.error_code">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">error_code</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.error_code" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the detailed message of this error.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.request_tracking_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">request_tracking_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.request_tracking_id" title="Permalink to this definition"></a></dt>
+<dd><p>The request tracking id of the exception.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceApiException.status_code">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status_code</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.status_code" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the HTTP Status code or DEFAULT_STATUS_CODE if the status code doesn’t adequately represent the error.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.exception.exceptions.</span></span><span class="sig-name descname"><span class="pre">ServiceUsageException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_tracking_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">429</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNKNOWN'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>ServiceUsageError is thrown when either service usage limit has been reached or credentials quota has been exhausted.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_ERROR_CODE">
+<span class="sig-name descname"><span class="pre">DEFAULT_ERROR_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'UNKNOWN'</span></em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_ERROR_CODE" title="Permalink to this definition"></a></dt>
+<dd><p>The default value of error code if there is no status code for this service failure.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_STATUS_CODE">
+<span class="sig-name descname"><span class="pre">DEFAULT_STATUS_CODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">429</span></em><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.DEFAULT_STATUS_CODE" title="Permalink to this definition"></a></dt>
+<dd><p>The default value of status code if there is no status code for this service failure.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.error_code">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">error_code</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.error_code" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the detailed message of this error.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.request_tracking_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">request_tracking_id</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.request_tracking_id" title="Permalink to this definition"></a></dt>
+<dd><p>The request tracking id of the exception.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.status_code">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status_code</span></span><a class="headerlink" href="#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.status_code" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the HTTP Status code or DEFAULT_STATUS_CODE if the status code doesn’t adequately represent the error.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-adobe.pdfservices.operation.exception">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-adobe.pdfservices.operation.exception" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Adobe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
