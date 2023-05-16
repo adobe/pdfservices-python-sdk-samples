@@ -1,1 +1,1 @@
-pdfservices-sdk==2.1.2
+pdfservices-sdk==2.2.0
