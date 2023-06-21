@@ -27,13 +27,10 @@ try:
     base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
     # Initial setup, create credentials instance.
-    credentials = Credentials.service_account_credentials_builder() \
-        .with_client_id("client_id") \
-        .with_client_secret("client_secret") \
-        .with_organization_id("organization_id") \
-        .with_account_id("account_id") \
-        .with_private_key("private_key") \
-        .build()
+    credentials = Credentials.service_principal_credentials_builder(). \
+        with_client_id(os.getenv('PDF_SERVICES_CLIENT_ID')). \
+        with_client_secret(os.getenv('PDF_SERVICES_CLIENT_SECRET')). \
+        build()
 
     # Create an ExecutionContext using credentials and create a new operation instance.
     execution_context = ExecutionContext.create(credentials)
