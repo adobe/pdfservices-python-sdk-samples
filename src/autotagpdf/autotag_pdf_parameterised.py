@@ -83,9 +83,10 @@ class AutotagPDFParameterised:
     def autotag_pdf(self):
         try:
             # Initial setup, create credentials instance.
-            credentials = Credentials.service_account_credentials_builder() \
-                .from_file(self.base_path + '/pdfservices-api-credentials.json') \
-                .build()
+            credentials = Credentials.service_principal_credentials_builder(). \
+                with_client_id(os.getenv('PDF_SERVICES_CLIENT_ID')). \
+                with_client_secret(os.getenv('PDF_SERVICES_CLIENT_SECRET')). \
+                build()
 
             # Create an ExecutionContext using credentials and create a new operation instance.
             execution_context = ExecutionContext.create(credentials)

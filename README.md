@@ -11,9 +11,20 @@ The sample application has the following requirements:
 
 ## Authentication Setup
 
-The api credentials file and corresponding private key file for the samples is ```pdfservices-api-credentials.json``` and ```private.key``` 
-respectively. Before the samples can be run, replace both the files with the ones present in the downloaded zip file at 
-the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow.
+The credentials file for the samples is ```pdfservices-api-credentials.json```.
+Before the samples can be run, set the environment variables `PDF_SERVICES_CLIENT_ID` and `PDF_SERVICES_CLIENT_SECRET` from the `pdfservices-api-credentials.json` file downloaded at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow by running the following commands:
+
+ 1. For MacOS/Linux Users :
+ ```$xlst
+ export PDF_SERVICES_CLIENT_ID=<YOUR CLIENT ID>
+ export PDF_SERVICES_CLIENT_SECRET=<YOUR CLIENT SECRET>
+ ```
+
+ 2. For Windows Users :
+ ```$xlst
+ SET PDF_SERVICES_CLIENT_ID=<YOUR CLIENT ID>
+ SET PDF_SERVICES_CLIENT_SECRET=<YOUR CLIENT SECRET>
+ ```
 
 The SDK also supports providing the authentication credentials at runtime, without storing them in a config file. Please
 refer this [section](#extract-text-elements-by-providing-in-memory-authentication-credentials) to 
