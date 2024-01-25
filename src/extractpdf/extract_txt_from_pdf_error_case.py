@@ -10,6 +10,7 @@
 
 import logging
 import os.path
+import sys
 
 from adobe.pdfservices.operation.auth.credentials import Credentials
 from adobe.pdfservices.operation.exception.exceptions import ServiceApiException, ServiceUsageException, SdkException
@@ -29,6 +30,7 @@ def handle_exception(exception_type, exception_message):
 
 
 try:
+    input_file_name = sys.argv[1]
     # get base path.
     base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -43,7 +45,7 @@ try:
     extract_pdf_operation = ExtractPDFOperation.create_new()
 
     # Set operation input from a source file.
-    source = FileRef.create_from_local_file(base_path + "/resources/removeProtectionInput.pdf")
+    source = FileRef.create_from_local_file(base_path + "/resources/" + input_file_name)
     extract_pdf_operation.set_input(source)
 
     # Build ExtractPDF options and set them into the operation

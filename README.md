@@ -170,6 +170,15 @@ The sample class ```extract_txt_from_pdf_with_specified_region.py``` highlights 
 python src/extractpdf/extract_txt_from_pdf_with_specified_region.py
 ```
 
+##### Extract Text elements (handling error scenarios)
+
+The sample class ```extract_txt_from_pdf_error_case.py``` highlights how to handle different types of exception. Place input pdf file in resources folder.
+
+```$xslt
+python src/extractpdf/extract_txt_from_pdf_error_case.py <input file name>
+```
+
+
 ### Autotag PDF
 
 These samples illustrate auto-tagging a PDF and generating the tagged PDF and an optional report
