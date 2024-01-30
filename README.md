@@ -172,7 +172,7 @@ python src/extractpdf/extract_txt_from_pdf_with_specified_region.py
 
 ##### Extract Text elements (handling error scenarios)
 
-The sample class ```extract_txt_from_pdf_error_case.py``` highlights how to handle different types of exception. Place input pdf file in resources folder.
+The sample class ```extract_txt_from_pdf_error_case.py``` highlights how to handle different types of exception. Place the invalid input pdf file in resources folder.
 
 ```$xslt
 python src/extractpdf/extract_txt_from_pdf_error_case.py <input file name>

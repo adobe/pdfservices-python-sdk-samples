@@ -1,4 +1,4 @@
-# Copyright 2021 Adobe. All rights reserved.
+# Copyright 2024 Adobe. All rights reserved.
 # This file is licensed to you under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License. You may obtain a copy
 # of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -23,10 +23,11 @@ from adobe.pdfservices.operation.pdfops.extract_pdf_operation import ExtractPDFO
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
 
-def handle_exception(exception_type, exception_message):
+def handle_exception(exception_type, exception_message, status_code):
     logging.info(exception_type)
+    if status_code is not None:
+        logging.info(status_code)
     logging.info(exception_message)
-    return exception_type, exception_message
 
 
 try:
@@ -59,14 +60,17 @@ try:
 
     # Save the result to the specified location.
     result.save_as(base_path + "/output/ExtractTextInfoFromPDF.zip")
-except ServiceApiException as serviceApiException:
+
+except ServiceApiException as service_api_exception:
     # ServiceApiException is thrown when an underlying service API call results in an error.
-    handle_exception("ServiceApiException", serviceApiException.message)
-except ServiceUsageException as serviceUsageException:
-    # ServiceUsageError is thrown when either service usage limit has been reached or credentials quota has been
+    handle_exception("ServiceApiException", service_api_exception.message, service_api_exception.status_code)
+
+except ServiceUsageException as service_usage_exception:
+    # ServiceUsageException is thrown when either service usage limit has been reached or credentials quota has been
     # exhausted.
-    handle_exception("ServiceUsageException", serviceUsageException.message)
-except SdkException as sdkException:
+    handle_exception("ServiceUsageException", service_usage_exception.message, service_usage_exception.status_code)
+
+except SdkException as sdk_exception:
     # SdkException is typically thrown for client-side or network errors.
-    handle_exception("SdkException", sdkException.message)
+    handle_exception("SdkException", sdk_exception.message, None)
 
