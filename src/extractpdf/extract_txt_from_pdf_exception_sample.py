@@ -46,7 +46,7 @@ try:
     extract_pdf_operation = ExtractPDFOperation.create_new()
 
     # Set operation input from a source file.
-    source = FileRef.create_from_local_file(base_path + "/resources/" + input_file_name)
+    source = FileRef.create_from_local_file(base_path + "/resources/invalidinputs/" + input_file_name)
     extract_pdf_operation.set_input(source)
 
     # Build ExtractPDF options and set them into the operation
