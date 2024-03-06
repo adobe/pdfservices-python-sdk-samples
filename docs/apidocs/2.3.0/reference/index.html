@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>API Reference &mdash; pdfservices-sdk  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -53,7 +49,6 @@
 <li class="toctree-l5"><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.from_file"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.from_file()</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_connect_timeout"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.with_connect_timeout()</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_pdf_services_uri"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.with_pdf_services_uri()</span></code></a></li>
-<li class="toctree-l5"><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_processing_timeout"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.with_processing_timeout()</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_read_timeout"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.with_read_timeout()</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_region"><code class="docutils literal notranslate"><span class="pre">ClientConfig.Builder.with_region()</span></code></a></li>
 </ul>
@@ -288,8 +283,7 @@
 <div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;connectTimeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4000&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;readTimeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;20000&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eu&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;processingTimeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;600000&quot;</span>
+<span class="w">    </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eu&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -319,24 +313,6 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>pdf_services_uri</strong> (<em>str</em>) – PDF service URI.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_processing_timeout">
-<span class="sig-name descname"><span class="pre">with_processing_timeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">processing_timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder.with_processing_timeout" title="Permalink to this definition"></a></dt>
-<dd><p>Sets the processing timeout. It should be greater than or equal to 600000 (10 minutes).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>processing_timeout</strong> (<em>int</em>) – Defines the processing timeout in milliseconds to process the documents.
-Default value is 600000 milliseconds (10 minutes)</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
@@ -440,8 +416,7 @@ Default value is 600000 milliseconds (10 minutes)</p>
 <div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;connectTimeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4000&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;readTimeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;20000&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eu&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;processingTimeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;600000&quot;</span>
+<span class="w">    </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eu&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -471,24 +446,6 @@ Default value is 600000 milliseconds (10 minutes)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>pdf_services_uri</strong> (<em>str</em>) – PDF service URI.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#adobe.pdfservices.operation.client_config.ClientConfig.Builder" title="adobe.pdfservices.operation.client_config.ClientConfig.Builder">ClientConfig.Builder</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">with_processing_timeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">processing_timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span></dt>
-<dd><p>Sets the processing timeout. It should be greater than or equal to 600000 (10 minutes).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>processing_timeout</strong> (<em>int</em>) – Defines the processing timeout in milliseconds to process the documents.
-Default value is 600000 milliseconds (10 minutes)</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>This Builder instance to add any additional parameters.</p>
