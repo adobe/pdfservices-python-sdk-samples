@@ -509,10 +509,10 @@ python src/extractpdf/extract_text_table_info_with_styling_from_pdf.py
 
 ##### Extract Text elements (handling error scenarios)
 
-The sample class ```extract_txt_from_pdf_exception_sample.py``` highlights how to handle different types of exception. Place the invalid input pdf file in resources/invalidinputs folder.
+The sample class ```extract_text_from_pdf_exception_sample.py``` highlights how to handle different types of exception. Place the invalid input pdf file in resources/invalidinputs folder.
 
 ```$xslt
-python src/extractpdf/extract_txt_from_pdf_exception_sample.py <input file name>
+python src/extractpdf/extract_text_from_pdf_exception_sample.py <input file name>
 ```
 
 ### PDF Properties
