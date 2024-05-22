@@ -33,15 +33,15 @@ logging.basicConfig(level=logging.INFO)
 class InsertPDFPages:
     def __init__(self):
         try:
-            base_file = open('baseInput.pdf', 'rb')
+            base_file = open('src/resources/baseInput.pdf', 'rb')
             base_input_stream = base_file.read()
             base_file.close()
 
-            first_file_to_insert = open('firstFileToInsertInput.pdf', 'rb')
+            first_file_to_insert = open('src/resources/firstFileToInsertInput.pdf', 'rb')
             first_input_stream_to_insert = first_file_to_insert.read()
             first_file_to_insert.close()
 
-            second_file_to_insert = open('secondFileToInsertInput.pdf', 'rb')
+            second_file_to_insert = open('src/resources/secondFileToInsertInput.pdf', 'rb')
             second_input_stream_to_insert = second_file_to_insert.read()
             second_file_to_insert.close()
 

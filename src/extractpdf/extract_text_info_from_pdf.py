@@ -8,15 +8,14 @@
 
 import logging
 import os
-import sys
 from datetime import datetime
 
 from adobe.pdfservices.operation.auth.service_principal_credentials import ServicePrincipalCredentials
 from adobe.pdfservices.operation.exception.exceptions import ServiceApiException, ServiceUsageException, SdkException
+from adobe.pdfservices.operation.pdf_services_media_type import PDFServicesMediaType
 from adobe.pdfservices.operation.io.cloud_asset import CloudAsset
 from adobe.pdfservices.operation.io.stream_asset import StreamAsset
 from adobe.pdfservices.operation.pdf_services import PDFServices
-from adobe.pdfservices.operation.pdf_services_media_type import PDFServicesMediaType
 from adobe.pdfservices.operation.pdfjobs.jobs.extract_pdf_job import ExtractPDFJob
 from adobe.pdfservices.operation.pdfjobs.params.extract_pdf.extract_element_type import ExtractElementType
 from adobe.pdfservices.operation.pdfjobs.params.extract_pdf.extract_pdf_params import ExtractPDFParams
@@ -34,8 +33,7 @@ logging.basicConfig(level=logging.INFO)
 class ExtractTextInfoFromPDF:
     def __init__(self):
         try:
-            input_file_name = sys.argv[1]
-            file = open('src/resources/invalidinputs/' + input_file_name, 'rb')
+            file = open('src/resources/extractPdfInput.pdf', 'rb')
             input_stream = file.read()
             file.close()
 
@@ -72,24 +70,8 @@ class ExtractTextInfoFromPDF:
             with open(output_file_path, "wb") as file:
                 file.write(stream_asset.get_input_stream())
 
-        except ServiceApiException as service_api_exception:
-            # ServiceApiException is thrown when an underlying service API call results in an error.
-            self.handle_exception("ServiceApiException",
-                                  service_api_exception.message,
-                                  service_api_exception.status_code)
-
-        except ServiceUsageException as service_usage_exception:
-            # ServiceUsageException is thrown when either service usage limit has been reached or credentials quota
-            # has been exhausted.
-            self.handle_exception("ServiceUsageException",
-                                  service_usage_exception.message,
-                                  service_usage_exception.status_code)
-
-        except SdkException as sdk_exception:
-            # SdkException is typically thrown for client-side or network errors.
-            self.handle_exception("SdkException",
-                                  sdk_exception.message,
-                                  None)
+        except (ServiceApiException, ServiceUsageException, SdkException) as e:
+            logging.exception(f'Exception encountered while executing operation: {e}')
 
     # Generates a string containing a directory structure and file name for the output file
     @staticmethod
@@ -98,14 +80,6 @@ class ExtractTextInfoFromPDF:
         time_stamp = now.strftime("%Y-%m-%dT%H-%M-%S")
         os.makedirs("output/ExtractTextInfoFromPDF", exist_ok=True)
         return f"output/ExtractTextInfoFromPDF/extract{time_stamp}.zip"
-
-    # Helper function to log type of exception, exception code and exception message
-    @staticmethod
-    def handle_exception(exception_type, exception_message, status_code) -> None:
-        logging.info(exception_type)
-        if status_code is not None:
-            logging.info(status_code)
-        logging.info(exception_message)
 
 
 if __name__ == "__main__":

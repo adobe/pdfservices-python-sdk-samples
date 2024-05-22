@@ -1,9 +1,9 @@
-# Samples for the Adobe PDFServices Python SDK
+# Samples for the Adobe PDF Services Python SDK
 
-This sample project helps you get started with the Adobe PDFServices Python SDK which currently has Extract PDF and Autotag PDF Operations.
+This sample project helps you get started with the Adobe PDF Services Python SDK.
 
-The sample classes illustrate how to perform PDF-related extraction (extracting content of PDF in user friendly 
-structured format) and autotagging (tagging content of PDF with rich structural information) using the SDK.
+The sample classes illustrate how to perform PDF-related actions (such as converting to and from the PDF format) using
+the SDK. **Please note that the Adobe PDF Services Python SDK supports only server side use cases.**
 
 ## Prerequisites
 The sample application has the following requirements:
@@ -26,11 +26,16 @@ Before the samples can be run, set the environment variables `PDF_SERVICES_CLIEN
  SET PDF_SERVICES_CLIENT_SECRET=<YOUR CLIENT SECRET>
  ```
 
-The SDK also supports providing the authentication credentials at runtime, without storing them in a config file. Please
-refer this [section](#extract-text-elements-by-providing-in-memory-authentication-credentials) to 
-know more.
-Additionally, SDK can be configured to process the documents in the specified region.
-Please refer this [section](#extract-text-elements-by-providing-the-region) to know more.
+## Client Configurations
+
+The SDK supports setting up custom socket timeout or connect timeout for the API calls. Please refer this [section](#create-a-pdf-file-from-a-docx-file-by-providing-custom-value-for-timeouts) to know more.
+
+Additionally, SDK can be configured to process the documents in the specified region. Please refer this [section](#export-a-pdf-file-to-a-docx-file-by-providing-the-region) section to know more.
+
+## Quota Exhaustion
+
+If you receive ServiceUsageError during the Samples run, it means that trial credentials have exhausted their usage quota.
+Please [contact us](https://www.adobe.com/go/pdftoolsapi_requestform) to get paid credentials.
 
 ## Installation
 
@@ -622,4 +627,4 @@ Contributions are welcome! Read the [Contributing Guide](.github/CONTRIBUTING.md
 
 ### Licensing
 
-This project is licensed under the Apache2 License. See [LICENSE](LICENSE.md) for more information. 
+This project is licensed under the MIT License. See [LICENSE](LICENSE.md) for more information. 
