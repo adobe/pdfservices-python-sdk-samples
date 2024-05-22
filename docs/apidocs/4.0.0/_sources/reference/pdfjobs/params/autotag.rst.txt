@@ -1,0 +1,12 @@
+Autotag PDF Params
+==================
+.. toctree::
+   :maxdepth: 3
+
+
+AutotagPDFParams
+-------------------
+.. autoclass:: adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.autotag_pdf_params
+    :members:
+    :undoc-members:
+    :show-inheritance:
