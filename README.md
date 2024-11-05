@@ -621,6 +621,44 @@ The sample class ```external_input_and_output_create_pdf_from_docx.py``` creates
 python src/externalstorage/external_input_and_output_create_pdf_from_docx.py
 ```
 
+### Accessibility Checker
+This samples illustrate how to check PDF files to see if they meet the machine-verifiable requirements of PDF/UA and WCAG 2.0.
+
+#### Run Accessibility Checker on Input PDF
+
+The sample class ```pdf_accessibility_checker.py``` checks the accessibility of an input PDF.
+
+```$xslt
+python src/pdfaccessibilitychecker/pdf_accessibility_checker.py
+```
+
+#### Run Accessibility Checker on input PDF file for given page start and page end
+
+This sample class ```pdf_accessibility_checker_with_option.py``` checks the accessibility of an input PDF for given page start and page end.
+
+```$xslt
+python src/pdfaccessibilitychecker/pdf_accessibility_checker_with_option.py
+```
+
+### PDF Watermark
+This sample illustrates how to add watermark to a PDF document.
+
+#### Add watermark to a PDF document
+
+The sample class ```pdf_watermark.py``` adds watermark with default appearance options to apply watermark on the PDF document.
+
+```$xslt
+python src/pdfwatermark/pdf_watermark.py
+```
+
+#### Run Add watermark to a PDF document with options
+
+This sample class ```pdf_watermark_with_options.py``` adds watermark to a PDF document with custom watermark appearance option and page range options.
+
+```$xslt
+python src/pdfwatermark/pdf_watermark_with_options.py
+```
+
 ### Contributing
 
 Contributions are welcome! Read the [Contributing Guide](.github/CONTRIBUTING.md) for more information.
