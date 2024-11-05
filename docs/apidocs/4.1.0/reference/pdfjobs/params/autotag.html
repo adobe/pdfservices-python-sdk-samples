@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autotag PDF Params &mdash; pdfservices-sdk 3.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=7dc6ce7e" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=acc74ff5"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            pdfservices-sdk
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../auth.html">Authentication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../auth.html#credentials">Credentials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../auth.html#adobe.pdfservices.operation.auth.credentials.Credentials"><code class="docutils literal notranslate"><span class="pre">Credentials</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../auth.html#serviceprincipalcredentials">ServicePrincipalCredentials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../auth.html#adobe.pdfservices.operation.auth.service_principal_credentials.ServicePrincipalCredentials"><code class="docutils literal notranslate"><span class="pre">ServicePrincipalCredentials</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../auth.html#adobe.pdfservices.operation.auth.service_principal_credentials.ServicePrincipalCredentials.get_client_id"><code class="docutils literal notranslate"><span class="pre">ServicePrincipalCredentials.get_client_id()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../auth.html#adobe.pdfservices.operation.auth.service_principal_credentials.ServicePrincipalCredentials.get_client_secret"><code class="docutils literal notranslate"><span class="pre">ServicePrincipalCredentials.get_client_secret()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../config.html">Config</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../config/notifier.html">Notifier Config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../config/notifier.html#callbacknotifierdata">CallbackNotifierData</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.callback_notifier_data.CallbackNotifierData"><code class="docutils literal notranslate"><span class="pre">CallbackNotifierData</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.callback_notifier_data.CallbackNotifierData.json_hint"><code class="docutils literal notranslate"><span class="pre">CallbackNotifierData.json_hint</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.callback_notifier_data.CallbackNotifierData.to_json"><code class="docutils literal notranslate"><span class="pre">CallbackNotifierData.to_json()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../config/notifier.html#notifierconfig">NotifierConfig</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.notifier_config.NotifierConfig"><code class="docutils literal notranslate"><span class="pre">NotifierConfig</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.notifier_config.NotifierConfig.json_hint"><code class="docutils literal notranslate"><span class="pre">NotifierConfig.json_hint</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.notifier_config.NotifierConfig.to_json"><code class="docutils literal notranslate"><span class="pre">NotifierConfig.to_json()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../config/notifier.html#notifierdata">NotifierData</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.notifier_data.NotifierData"><code class="docutils literal notranslate"><span class="pre">NotifierData</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../config/notifier.html#notifiertype">NotifierType</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.notifier_type.NotifierType"><code class="docutils literal notranslate"><span class="pre">NotifierType</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../config/notifier.html#adobe.pdfservices.operation.config.notifier.notifier_type.NotifierType.CALLBACK"><code class="docutils literal notranslate"><span class="pre">NotifierType.CALLBACK</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../config/proxy.html">Proxy Config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../config/proxy.html#proxyauthenticationcredentials">ProxyAuthenticationCredentials</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_authentication_credentials.ProxyAuthenticationCredentials"><code class="docutils literal notranslate"><span class="pre">ProxyAuthenticationCredentials</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../config/proxy.html#proxyscheme">ProxyScheme</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_scheme.ProxyScheme"><code class="docutils literal notranslate"><span class="pre">ProxyScheme</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_scheme.ProxyScheme.HTTP"><code class="docutils literal notranslate"><span class="pre">ProxyScheme.HTTP</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_scheme.ProxyScheme.HTTPS"><code class="docutils literal notranslate"><span class="pre">ProxyScheme.HTTPS</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_scheme.ProxyScheme.get"><code class="docutils literal notranslate"><span class="pre">ProxyScheme.get()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../config/proxy.html#proxyserverconfig">ProxyServerConfig</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.HTTPS_PORT"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.HTTPS_PORT</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.HTTP_PORT"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.HTTP_PORT</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.from_json"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.from_json()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.get_credentials"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.get_credentials()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.get_host"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.get_host()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.get_port"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.get_port()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.get_port_based_on_scheme"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.get_port_based_on_scheme()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.get_proxy_scheme"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.get_proxy_scheme()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.proxy_server_config.ProxyServerConfig.proxy_config_map"><code class="docutils literal notranslate"><span class="pre">ProxyServerConfig.proxy_config_map()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../config/proxy.html#usernamepasswordcredentials">UsernamePasswordCredentials</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.username_password_credentials.UsernamePasswordCredentials"><code class="docutils literal notranslate"><span class="pre">UsernamePasswordCredentials</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.username_password_credentials.UsernamePasswordCredentials.from_json"><code class="docutils literal notranslate"><span class="pre">UsernamePasswordCredentials.from_json()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.username_password_credentials.UsernamePasswordCredentials.get_password"><code class="docutils literal notranslate"><span class="pre">UsernamePasswordCredentials.get_password()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../config/proxy.html#adobe.pdfservices.operation.config.proxy.username_password_credentials.UsernamePasswordCredentials.get_username"><code class="docutils literal notranslate"><span class="pre">UsernamePasswordCredentials.get_username()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../config.html#clientconfig">ClientConfig</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../config.html#adobe.pdfservices.operation.config.client_config.ClientConfig"><code class="docutils literal notranslate"><span class="pre">ClientConfig</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../config.html#adobe.pdfservices.operation.config.client_config.ClientConfig.from_file"><code class="docutils literal notranslate"><span class="pre">ClientConfig.from_file()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../config.html#adobe.pdfservices.operation.config.client_config.ClientConfig.get_connect_timeout"><code class="docutils literal notranslate"><span class="pre">ClientConfig.get_connect_timeout()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../config.html#adobe.pdfservices.operation.config.client_config.ClientConfig.get_pdf_services_uri"><code class="docutils literal notranslate"><span class="pre">ClientConfig.get_pdf_services_uri()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../config.html#adobe.pdfservices.operation.config.client_config.ClientConfig.get_proxy_server_config"><code class="docutils literal notranslate"><span class="pre">ClientConfig.get_proxy_server_config()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../config.html#adobe.pdfservices.operation.config.client_config.ClientConfig.get_read_timeout"><code class="docutils literal notranslate"><span class="pre">ClientConfig.get_read_timeout()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../config.html#adobe.pdfservices.operation.config.client_config.ClientConfig.validate"><code class="docutils literal notranslate"><span class="pre">ClientConfig.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../exception.html">Exceptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../exception.html#serviceusageexception">ServiceUsageException</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../exception.html#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.add_note"><code class="docutils literal notranslate"><span class="pre">add_note()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../exception.html#adobe.pdfservices.operation.exception.exceptions.ServiceUsageException.with_traceback"><code class="docutils literal notranslate"><span class="pre">with_traceback()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../exception.html#module-adobe.pdfservices.operation.exception.exceptions.ServiceApiException">ServiceApiException</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../exception.html#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.add_note"><code class="docutils literal notranslate"><span class="pre">add_note()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../exception.html#adobe.pdfservices.operation.exception.exceptions.ServiceApiException.with_traceback"><code class="docutils literal notranslate"><span class="pre">with_traceback()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../exception.html#module-adobe.pdfservices.operation.exception.exceptions.SdkException">SdkException</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../exception.html#adobe.pdfservices.operation.exception.exceptions.SdkException.add_note"><code class="docutils literal notranslate"><span class="pre">add_note()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../exception.html#adobe.pdfservices.operation.exception.exceptions.SdkException.with_traceback"><code class="docutils literal notranslate"><span class="pre">with_traceback()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../io.html">IO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../io.html#asset">Asset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.asset.Asset"><code class="docutils literal notranslate"><span class="pre">Asset</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../io.html#cloudasset">CloudAsset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.cloud_asset.CloudAsset"><code class="docutils literal notranslate"><span class="pre">CloudAsset</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.cloud_asset.CloudAsset.get_asset_id"><code class="docutils literal notranslate"><span class="pre">CloudAsset.get_asset_id()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.cloud_asset.CloudAsset.get_download_uri"><code class="docutils literal notranslate"><span class="pre">CloudAsset.get_download_uri()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../io.html#externalasset">ExternalAsset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_asset.ExternalAsset"><code class="docutils literal notranslate"><span class="pre">ExternalAsset</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_asset.ExternalAsset.get_external_storage_type"><code class="docutils literal notranslate"><span class="pre">ExternalAsset.get_external_storage_type()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_asset.ExternalAsset.get_uri"><code class="docutils literal notranslate"><span class="pre">ExternalAsset.get_uri()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_asset.ExternalAsset.json_hint"><code class="docutils literal notranslate"><span class="pre">ExternalAsset.json_hint</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_asset.ExternalAsset.to_json"><code class="docutils literal notranslate"><span class="pre">ExternalAsset.to_json()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../io.html#externalstoragetype">ExternalStorageType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_storage_type.ExternalStorageType"><code class="docutils literal notranslate"><span class="pre">ExternalStorageType</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_storage_type.ExternalStorageType.BLOB"><code class="docutils literal notranslate"><span class="pre">ExternalStorageType.BLOB</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_storage_type.ExternalStorageType.DROPBOX"><code class="docutils literal notranslate"><span class="pre">ExternalStorageType.DROPBOX</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_storage_type.ExternalStorageType.S3"><code class="docutils literal notranslate"><span class="pre">ExternalStorageType.S3</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_storage_type.ExternalStorageType.SHAREPOINT"><code class="docutils literal notranslate"><span class="pre">ExternalStorageType.SHAREPOINT</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.external_storage_type.ExternalStorageType.get"><code class="docutils literal notranslate"><span class="pre">ExternalStorageType.get()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../io.html#streamasset">StreamAsset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.stream_asset.StreamAsset"><code class="docutils literal notranslate"><span class="pre">StreamAsset</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.stream_asset.StreamAsset.get_input_stream"><code class="docutils literal notranslate"><span class="pre">StreamAsset.get_input_stream()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../io.html#adobe.pdfservices.operation.io.stream_asset.StreamAsset.get_mime_type"><code class="docutils literal notranslate"><span class="pre">StreamAsset.get_mime_type()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../pdfjobs.html">PDF Jobs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../jobs.html">Jobs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#autotagpdfjob">AutotagPDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.autotag_pdf_job.AutotagPDFJob"><code class="docutils literal notranslate"><span class="pre">AutotagPDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#combinepdfjob">CombinePDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.combine_pdf_job.CombinePDFJob"><code class="docutils literal notranslate"><span class="pre">CombinePDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#compresspdfjob">CompressPDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.compress_pdf_job.CompressPDFJob"><code class="docutils literal notranslate"><span class="pre">CompressPDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#createpdfjob">CreatePDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.create_pdf_job.CreatePDFJob"><code class="docutils literal notranslate"><span class="pre">CreatePDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#deletepagesjob">DeletePagesJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.delete_pages_job.DeletePagesJob"><code class="docutils literal notranslate"><span class="pre">DeletePagesJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#documentmergejob">DocumentMergeJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.document_merge_job.DocumentMergeJob"><code class="docutils literal notranslate"><span class="pre">DocumentMergeJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#pdfelectronicsealjob">PDFElectronicSealJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.eseal_job.PDFElectronicSealJob"><code class="docutils literal notranslate"><span class="pre">PDFElectronicSealJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#exportpdfjob">ExportPDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.export_pdf_job.ExportPDFJob"><code class="docutils literal notranslate"><span class="pre">ExportPDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#exportpdftoimagesjob">ExportPDFtoImagesJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.export_pdf_to_images_job.ExportPDFtoImagesJob"><code class="docutils literal notranslate"><span class="pre">ExportPDFtoImagesJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#extractpdfjob">ExtractPDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.extract_pdf_job.ExtractPDFJob"><code class="docutils literal notranslate"><span class="pre">ExtractPDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#htmltopdfjob">HTMLtoPDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.html_to_pdf_job.HTMLtoPDFJob"><code class="docutils literal notranslate"><span class="pre">HTMLtoPDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#insertpagesjob">InsertPagesJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.insert_pages_job.InsertPagesJob"><code class="docutils literal notranslate"><span class="pre">InsertPagesJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#linearizepdfjob">LinearizePDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.linearize_pdf_job.LinearizePDFJob"><code class="docutils literal notranslate"><span class="pre">LinearizePDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#ocrpdfjob">OCRPDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.ocr_pdf_job.OCRPDFJob"><code class="docutils literal notranslate"><span class="pre">OCRPDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#pdfpropertiesjob">PDFPropertiesJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.pdf_properties_job.PDFPropertiesJob"><code class="docutils literal notranslate"><span class="pre">PDFPropertiesJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#protectpdfjob">ProtectPDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.protect_pdf_job.ProtectPDFJob"><code class="docutils literal notranslate"><span class="pre">ProtectPDFJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#removeprotectionjob">RemoveProtectionJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.remove_protection_job.RemoveProtectionJob"><code class="docutils literal notranslate"><span class="pre">RemoveProtectionJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#reorderpagesjob">ReorderPagesJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.reorder_pages_job.ReorderPagesJob"><code class="docutils literal notranslate"><span class="pre">ReorderPagesJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#replacepagesjob">ReplacePagesJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.replace_pages_job.ReplacePagesJob"><code class="docutils literal notranslate"><span class="pre">ReplacePagesJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#rotatepagesjob">RotatePagesJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.rotate_pages_job.RotatePagesJob"><code class="docutils literal notranslate"><span class="pre">RotatePagesJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../jobs.html#splitpdfjob">SplitPDFJob</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../jobs.html#adobe.pdfservices.operation.pdfjobs.jobs.split_pdf_job.SplitPDFJob"><code class="docutils literal notranslate"><span class="pre">SplitPDFJob</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../params.html">Params</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../params.html#module-adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.autotag_pdf_params">AutotagPDFParams</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.autotag_pdf_params.AutotagPDFParams"><code class="docutils literal notranslate"><span class="pre">AutotagPDFParams</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.autotag_pdf_params.AutotagPDFParams.get_generate_report"><code class="docutils literal notranslate"><span class="pre">AutotagPDFParams.get_generate_report()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.autotag_pdf_params.AutotagPDFParams.get_shift_headings"><code class="docutils literal notranslate"><span class="pre">AutotagPDFParams.get_shift_headings()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../params.html#combinepdfparams">CombinePDFParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../params.html#compresspdfparams">CompressPDFParams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../params.html#pageranges">PageRanges</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges"><code class="docutils literal notranslate"><span class="pre">PageRanges</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.add_all"><code class="docutils literal notranslate"><span class="pre">PageRanges.add_all()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.add_all_from"><code class="docutils literal notranslate"><span class="pre">PageRanges.add_all_from()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.add_range"><code class="docutils literal notranslate"><span class="pre">PageRanges.add_range()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.add_single_page"><code class="docutils literal notranslate"><span class="pre">PageRanges.add_single_page()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.get_ranges"><code class="docutils literal notranslate"><span class="pre">PageRanges.get_ranges()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.is_empty"><code class="docutils literal notranslate"><span class="pre">PageRanges.is_empty()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.json_hint"><code class="docutils literal notranslate"><span class="pre">PageRanges.json_hint</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.to_json"><code class="docutils literal notranslate"><span class="pre">PageRanges.to_json()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.page_ranges.PageRanges.validate"><code class="docutils literal notranslate"><span class="pre">PageRanges.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../params.html#pdfservicesjobparams">PDFServicesJobParams</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../params.html#adobe.pdfservices.operation.pdfjobs.params.pdf_services_job_params.PDFServicesJobParams"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobParams</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../result.html">Result</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#autotagpdfresult">AutotagPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.autotag_pdf_result.AutotagPDFResult"><code class="docutils literal notranslate"><span class="pre">AutotagPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.autotag_pdf_result.AutotagPDFResult.get_report"><code class="docutils literal notranslate"><span class="pre">AutotagPDFResult.get_report()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.autotag_pdf_result.AutotagPDFResult.get_resource"><code class="docutils literal notranslate"><span class="pre">AutotagPDFResult.get_resource()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.autotag_pdf_result.AutotagPDFResult.get_tagged_pdf"><code class="docutils literal notranslate"><span class="pre">AutotagPDFResult.get_tagged_pdf()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#combinepdfresult">CombinePDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.combine_pdf_result.CombinePDFResult"><code class="docutils literal notranslate"><span class="pre">CombinePDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.combine_pdf_result.CombinePDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">CombinePDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#compresspdfresult">CompressPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.compress_pdf_result.CompressPDFResult"><code class="docutils literal notranslate"><span class="pre">CompressPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.compress_pdf_result.CompressPDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">CompressPDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#createpdfresult">CreatePDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.create_pdf_result.CreatePDFResult"><code class="docutils literal notranslate"><span class="pre">CreatePDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.create_pdf_result.CreatePDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">CreatePDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#deletepagesresult">DeletePagesResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.delete_pages_result.DeletePagesResult"><code class="docutils literal notranslate"><span class="pre">DeletePagesResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.delete_pages_result.DeletePagesResult.get_asset"><code class="docutils literal notranslate"><span class="pre">DeletePagesResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#documentmergeresult">DocumentMergeResult</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#esealpdfresult">ESealPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.eseal_pdf_result.ESealPDFResult"><code class="docutils literal notranslate"><span class="pre">ESealPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.eseal_pdf_result.ESealPDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">ESealPDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#exportpdfresult">ExportPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.export_pdf_result.ExportPDFResult"><code class="docutils literal notranslate"><span class="pre">ExportPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.export_pdf_result.ExportPDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">ExportPDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#exportpdftoimagesresult">ExportPDFtoImagesResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.export_pdf_to_images_result.ExportPDFtoImagesResult"><code class="docutils literal notranslate"><span class="pre">ExportPDFtoImagesResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.export_pdf_to_images_result.ExportPDFtoImagesResult.get_assets"><code class="docutils literal notranslate"><span class="pre">ExportPDFtoImagesResult.get_assets()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#extractpdfresult">ExtractPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.extract_pdf_result.ExtractPDFResult"><code class="docutils literal notranslate"><span class="pre">ExtractPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.extract_pdf_result.ExtractPDFResult.get_content"><code class="docutils literal notranslate"><span class="pre">ExtractPDFResult.get_content()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.extract_pdf_result.ExtractPDFResult.get_content_json"><code class="docutils literal notranslate"><span class="pre">ExtractPDFResult.get_content_json()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.extract_pdf_result.ExtractPDFResult.get_resource"><code class="docutils literal notranslate"><span class="pre">ExtractPDFResult.get_resource()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#htmltopdfresult">HTMLtoPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.html_to_pdf_result.HTMLtoPDFResult"><code class="docutils literal notranslate"><span class="pre">HTMLtoPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.html_to_pdf_result.HTMLtoPDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">HTMLtoPDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#insertpagesresult">InsertPagesResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.insert_pages_result.InsertPagesResult"><code class="docutils literal notranslate"><span class="pre">InsertPagesResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.insert_pages_result.InsertPagesResult.get_asset"><code class="docutils literal notranslate"><span class="pre">InsertPagesResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#linearizepdfresult">LinearizePDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.linearize_pdf_result.LinearizePDFResult"><code class="docutils literal notranslate"><span class="pre">LinearizePDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.linearize_pdf_result.LinearizePDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">LinearizePDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#ocrpdfresult">OCRPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.ocr_pdf_result.OCRPDFResult"><code class="docutils literal notranslate"><span class="pre">OCRPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.ocr_pdf_result.OCRPDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">OCRPDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#pdfpropertiesresult">PDFPropertiesResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.pdf_properties_result.PDFPropertiesResult"><code class="docutils literal notranslate"><span class="pre">PDFPropertiesResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.pdf_properties_result.PDFPropertiesResult.get_pdf_properties_dict"><code class="docutils literal notranslate"><span class="pre">PDFPropertiesResult.get_pdf_properties_dict()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#protectpdfresult">ProtectPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.protect_pdf_result.ProtectPDFResult"><code class="docutils literal notranslate"><span class="pre">ProtectPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.protect_pdf_result.ProtectPDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">ProtectPDFResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#removeprotectionresult">RemoveProtectionResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.remove_protection_result.RemoveProtectionResult"><code class="docutils literal notranslate"><span class="pre">RemoveProtectionResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.remove_protection_result.RemoveProtectionResult.get_asset"><code class="docutils literal notranslate"><span class="pre">RemoveProtectionResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#reorderpagesresult">ReorderPagesResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.reorder_pages_result.ReorderPagesResult"><code class="docutils literal notranslate"><span class="pre">ReorderPagesResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.reorder_pages_result.ReorderPagesResult.get_asset"><code class="docutils literal notranslate"><span class="pre">ReorderPagesResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#replacepagesresult">ReplacePagesResult</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#rotatepagesresult">RotatePagesResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.rotate_pages_result.RotatePagesResult"><code class="docutils literal notranslate"><span class="pre">RotatePagesResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.rotate_pages_result.RotatePagesResult.get_asset"><code class="docutils literal notranslate"><span class="pre">RotatePagesResult.get_asset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#splitpdfresult">SplitPDFResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.split_pdf_result.SplitPDFResult"><code class="docutils literal notranslate"><span class="pre">SplitPDFResult</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.split_pdf_result.SplitPDFResult.get_asset"><code class="docutils literal notranslate"><span class="pre">SplitPDFResult.get_asset()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.split_pdf_result.SplitPDFResult.get_assets"><code class="docutils literal notranslate"><span class="pre">SplitPDFResult.get_assets()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../result.html#pdfservicesjobresult">PDFServicesJobResult</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../result.html#adobe.pdfservices.operation.pdfjobs.result.pdf_services_job_result.PDFServicesJobResult"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobResult</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#pdfservices">PDFServices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices"><code class="docutils literal notranslate"><span class="pre">PDFServices</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices.delete_asset"><code class="docutils literal notranslate"><span class="pre">PDFServices.delete_asset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices.get_content"><code class="docutils literal notranslate"><span class="pre">PDFServices.get_content()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices.get_job_result"><code class="docutils literal notranslate"><span class="pre">PDFServices.get_job_result()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices.get_job_status"><code class="docutils literal notranslate"><span class="pre">PDFServices.get_job_status()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices.refresh_download_uri"><code class="docutils literal notranslate"><span class="pre">PDFServices.refresh_download_uri()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices.submit"><code class="docutils literal notranslate"><span class="pre">PDFServices.submit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices.upload"><code class="docutils literal notranslate"><span class="pre">PDFServices.upload()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services.PDFServices.upload_assets"><code class="docutils literal notranslate"><span class="pre">PDFServices.upload_assets()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#pdfservicesjob">PDFServicesJob</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job.PDFServicesJob"><code class="docutils literal notranslate"><span class="pre">PDFServicesJob</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#pdfservicesjobstatus">PDFServicesJobStatus</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job_status.PDFServicesJobStatus"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobStatus</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job_status.PDFServicesJobStatus.DONE"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobStatus.DONE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job_status.PDFServicesJobStatus.FAILED"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobStatus.FAILED</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job_status.PDFServicesJobStatus.IN_PROGRESS"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobStatus.IN_PROGRESS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job_status.PDFServicesJobStatus.get_value"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobStatus.get_value()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#pdfservicesjobstatusresponse">PDFServicesJobStatusResponse</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job_status_response.PDFServicesJobStatusResponse"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobStatusResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job_status_response.PDFServicesJobStatusResponse.get_retry_interval"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobStatusResponse.get_retry_interval()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_job_status_response.PDFServicesJobStatusResponse.get_status"><code class="docutils literal notranslate"><span class="pre">PDFServicesJobStatusResponse.get_status()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#pdfservicesmediatype">PDFServicesMediaType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.AI"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.AI</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.BMP"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.BMP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.CSV"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.CSV</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.DOC"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.DOC</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.DOCX"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.DOCX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.GIF"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.GIF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.HTML"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.HTML</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.INDD"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.INDD</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.JPEG"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.JPEG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.JPG"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.JPG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.JSON"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.JSON</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.PDF"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.PDF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.PNG"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.PNG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.PPT"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.PPT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.PPTX"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.PPTX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.PSD"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.PSD</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.RTF"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.RTF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.SVG"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.SVG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.TIF"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.TIF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.TIFF"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.TIFF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.TXT"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.TXT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.XLS"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.XLS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.XLSX"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.XLSX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.ZIP"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.ZIP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.extension"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.extension</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.get_from_extension"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.get_from_extension()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_media_type.PDFServicesMediaType.mime_type"><code class="docutils literal notranslate"><span class="pre">PDFServicesMediaType.mime_type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#pdfservicesresponse">PDFServicesResponse</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_response.PDFServicesResponse"><code class="docutils literal notranslate"><span class="pre">PDFServicesResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.pdf_services_response.PDFServicesResponse.get_result"><code class="docutils literal notranslate"><span class="pre">PDFServicesResponse.get_result()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#region">Region</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.region.Region"><code class="docutils literal notranslate"><span class="pre">Region</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.region.Region.EU"><code class="docutils literal notranslate"><span class="pre">Region.EU</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../index.html#adobe.pdfservices.operation.region.Region.US"><code class="docutils literal notranslate"><span class="pre">Region.US</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">pdfservices-sdk</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Autotag PDF Params</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="autotag-pdf-params">
+<h1>Autotag PDF Params<a class="headerlink" href="#autotag-pdf-params" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="autotagpdfparams">
+<h2>AutotagPDFParams<a class="headerlink" href="#autotagpdfparams" title="Link to this heading"></a></h2>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.autotag_pdf_params">
+<span class="sig-prename descclassname"><span class="pre">adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.</span></span><span class="sig-name descname"><span class="pre">autotag_pdf_params</span></span><a class="headerlink" href="#adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.autotag_pdf_params" title="Link to this definition"></a></dt>
+<dd><p>alias of &lt;module ‘adobe.pdfservices.operation.pdfjobs.params.autotag_pdf.autotag_pdf_params’ from ‘/Users/jasnoors/Desktop/Python SDK/dc-cpf-python-sdk/src/adobe/pdfservices/operation/pdfjobs/params/autotag_pdf/autotag_pdf_params.py’&gt;</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, adobe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
