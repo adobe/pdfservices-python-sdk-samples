@@ -147,6 +147,14 @@ The sample class ```export_pdf_to_docx_with_ocr_option.py``` converts a PDF file
 python src/exportpdf/export_pdf_to_docx_with_ocr_option.py
 ```
 
+#### Export a PDF File To a DOCX File From URL 
+
+The sample class ```export_pdf_to_docx_from_url.py``` converts a PDF file to a DOCX file.
+
+```$xslt
+python src/exportpdf/export_pdf_to_docx_from_url.py <URL>
+```
+
 #### Export a PDF File To an Image Format (JPEG)
 
 The sample class ```export_pdf_to_jpeg.py``` converts a PDF file's pages to a list of JPEG images.
