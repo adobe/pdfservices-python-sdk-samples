@@ -163,6 +163,22 @@ The sample class ```export_pdf_to_jpeg_zip.py``` converts a PDF file's pages to 
 python src/exportpdftoimages/export_pdf_to_jpeg_zip.py
 ```
 
+#### Import Form Data Into a PDF File
+
+The sample class ```import_pdf_form_data.py``` imports form data into a PDF file that contains form fields.
+
+```$xslt
+python src/importpdfformdata/import_pdf_form_data.py
+```
+
+#### Export Form Data From a PDF File
+
+The sample class ```export_pdf_form_data.py``` extracts form data from a PDF file that contains filled form fields and returns the data in JSON format.
+
+```$xslt
+python src/exportpdfformdata/export_pdf_form_data.py
+```
+
 ### Combine PDF Files
 These samples illustrate how to combine multiple PDF files into a single PDF file.
 
@@ -436,7 +452,7 @@ The output of SDK extract operation is Zip package. The Zip package consists of 
 
 * The structuredData.json file with the extracted content & PDF element structure. See the [JSON schema](https://opensource.adobe.com/pdftools-sdk-docs/release/shared/extractJSONOutputSchema.json). Please refer the [Styling JSON schema](https://opensource.adobe.com/pdftools-sdk-docs/release/shared/extractJSONOutputSchemaStylingInfo.json) for a description of the output when the styling option is enabled. 
 * A renditions' folder(s) containing renditions for each element type selected as input. 
-  The folder name is either “tables” or “figures” depending on your specified element type. 
+  The folder name is either "tables" or "figures" depending on your specified element type. 
   Each folder contains renditions with filenames that correspond to the element information in the JSON file. 
   
 #### Extract Text Elements
