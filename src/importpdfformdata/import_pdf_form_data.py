@@ -29,7 +29,7 @@ logging.basicConfig(level=logging.INFO)
 class ImportPDFFormData:
     def __init__(self):
         try:
-            file = open('../resources/importPdfFormDataInput.pdf', 'rb')
+            file = open('src/resources/importPdfFormDataInput.pdf', 'rb')
             input_stream = file.read()
             file.close()
 
@@ -86,8 +86,8 @@ class ImportPDFFormData:
     def create_output_file_path() -> str:
         now = datetime.now()
         time_stamp = now.strftime("%Y-%m-%dT%H-%M-%S")
-        os.makedirs("../../output/ImportPDFFormData", exist_ok=True)
-        return f"../../output/ImportPDFFormData/import{time_stamp}.pdf"
+        os.makedirs("output/ImportPDFFormData", exist_ok=True)
+        return f"output/ImportPDFFormData/import{time_stamp}.pdf"
 
 
 if __name__ == "__main__":
