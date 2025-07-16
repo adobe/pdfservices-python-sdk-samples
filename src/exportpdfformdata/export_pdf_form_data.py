@@ -26,7 +26,7 @@ logging.basicConfig(level=logging.INFO)
 class ExportPDFFormData:
     def __init__(self):
         try:
-            file = open('../resources/exportPdfFormDataInput.pdf', 'rb')
+            file = open('src/resources/exportPdfFormDataInput.pdf', 'rb')
             input_stream = file.read()
             file.close()
 
@@ -67,8 +67,8 @@ class ExportPDFFormData:
     def create_output_file_path() -> str:
         now = datetime.now()
         time_stamp = now.strftime("%Y-%m-%dT%H-%M-%S")
-        os.makedirs("../../output/ExportPDFFormData", exist_ok=True)
-        return f"../../output/ExportPDFFormData/export{time_stamp}.json"
+        os.makedirs("output/ExportPDFFormData", exist_ok=True)
+        return f"output/ExportPDFFormData/export{time_stamp}.json"
 
 
 if __name__ == "__main__":
